@@ -23,7 +23,7 @@ jobs:
       id: adocbuild_html
       uses: tonynv/asciidoctor-action@master
       with:
-          program: "asciidoctor -D cdvno -o index.html -a lang=nb docs/main.adoc"
+          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
 
     - name: Build pdf
       id: adocbuild_pdf
