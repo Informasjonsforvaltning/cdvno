@@ -8,20 +8,20 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
-@prefix cdvno: <https://jimjyang.github.io/playground/cdvno#> . 
+@prefix cdvno: <https://informasjonsforvaltning.github.io/cdvno#> . 
 
-<https://jimjyang.github.io/playground/cdvno/test#block1>
+<https://informasjonsforvaltning.github.io/cdvno/test#block1>
    rdf:type cdvno:Block;
    dct:description """bare ment for test og demo"""@nb,
        """only meant for test and demo"""@en;
-   dct:identifier "https://jimjyang.github.io/playground/cdvno/test#block1"^^xsd:anyURI;
+   dct:identifier "https://informasjonsforvaltning.github.io/cdvno/test#block1"^^xsd:anyURI;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
    dcat:theme <https://psi.norge.no/los/tema/avlastning-og-stotte>;
    dct:title """testblokk"""@nb,
        """test block"""@en;
    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;
-   dcat:distribution <https://jimjyang.github.io/playground/cdvno/test#distri1>;
+   dcat:distribution <https://informasjonsforvaltning.github.io/cdvno/test#distri1>;
    dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
    dct:audience <https://w3id.org/demo-resources/demo-classifications#demo-category-A>;
    dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
@@ -37,7 +37,7 @@
        """corrected a typo"""@en;
    .
  
-<https://jimjyang.github.io/playground/cdvno/test#distri1>
+<https://informasjonsforvaltning.github.io/cdvno/test#distri1>
    rdf:type dcat:Distribution;
    dcat:accessURL <https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak>;
    dct:description """testdistribusjon"""@nb,
@@ -49,4 +49,4 @@
    dcat:accessService <https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1>;
    .
  
-#### End of the file, 2023-05-11 18:23:25
+#### End of the file, 2023-06-19 11:09:40
