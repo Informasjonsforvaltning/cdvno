@@ -8,9 +8,9 @@ image::images/cdvno-legal-resource.png[alt="UML-diagram med klassen Regulativ re
 [cols="30s,70d"]
 |===
 | _English name_ | _Legal Resource_
-| Anvendelse / _Usage note_ | Klassen brukes til å representere en regulativ ressurs, f.eks. lovgivning/lovverket, retningslinjer eller politikk som regulerer utførelsen av en tjeneste.
+| Anvendelse / _Usage note_ | Klassen brukes til å representere regelverk, policy, retningslinjer og ulike reguleringer som regulerer forvaltningen av innholdet.
 
-_This class is used to represent the legislation, policy or policies that lie behind the Rules that govern the service._
+_This class is used to represent the legislation, policy or policies that regulate the governance of the content._
 | URI | eli:LegalResource
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
