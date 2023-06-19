@@ -18,7 +18,7 @@ image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https
 include::shared/download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* + 
-Vennligst meld dine tilbakemeldinger inn som https://github.com/jimjyang/playground/issues[https://github.com/Informasjonsforvaltning/cdvno/issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+Vennligst meld dine tilbakemeldinger inn som https://github.com/jimjyang/playground/issues[https://github.com/Informasjonsforvaltning/cdvno/issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis. 
 
 *Status*: #under utvikling# + 
 *Sist oppdatert*: 2023-05-30
