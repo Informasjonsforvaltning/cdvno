@@ -29,7 +29,7 @@ jobs:
       id: adocbuild_pdf
       uses: tonynv/asciidoctor-action@master
       with:
-          program: "asciidoctor-pdf -D cdvno -o cdvno.pdf -a lang=nb docs/main.adoc"
+          program: "asciidoctor-pdf -D docs -o cdvno.pdf -a lang=nb docs/main.adoc"
       continue-on-error: true
 
     - name: Deploy
@@ -37,4 +37,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
-        publish_dir: ./cdvno
+        publish_dir: ./docs
