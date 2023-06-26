@@ -155,7 +155,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi tittel til den regulative ressursen. Egenskapen bør gjentas bør tittelen finnes på flere språk.
 
-_To specify the title of the legal resource, repeated when the title is in several parallel languages._
+_To specify the title of the legal resource This property should be repeated when the title is in several parallel languages._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
