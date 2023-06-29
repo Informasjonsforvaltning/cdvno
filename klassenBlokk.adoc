@@ -381,6 +381,27 @@ Eksempel i RDF Turtle:
    .
 -----
 
+==== Blokk - har relatert regelverk (cv:hasLegalResource) [[Blokk-har-relatert-regelverk]] 
+
+[cols="30s,70d"]
+|===
+| _English name_ | has related legal resource
+| URI | cv:hasLegalResource
+| Verdiområde / _Range_ | eli:LegalResource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi regelverk som er relevant for blokkens innhold.
+
+_This property is used to specify the legal resource that is relevant for the content of the block._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aBlock> a cdvno:Block; # blokk
+   cv:hasLegalResource <aLegalResource>;
+   .
+-----
+
 ==== Blokk - målgruppe (dct:audience) [[Blokk-målgruppe]]  
 
 [cols="30s,70d"]
