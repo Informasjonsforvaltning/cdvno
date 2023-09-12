@@ -364,7 +364,7 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| _English name_ | validity period
+| _English name_ | _validity period_
 | URI | cv:validityPeriod
 | Verdiområde / _Range_ | time:ProperInterval 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi gyldighetsperiode for blokkens innhold.
@@ -385,7 +385,7 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| _English name_ | has related legal resource
+| _English name_ | _has related legal resource_
 | URI | cv:hasLegalResource
 | Verdiområde / _Range_ | eli:LegalResource
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi regelverk som er relevant for blokkens innhold.
@@ -406,7 +406,7 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| _English name_ | source
+| _English name_ | _source_
 | URI | dct:source
 | Verdiområde / _Range_ | cdvno:Block
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en blokk som gjeldende blokk er avledet fra.
