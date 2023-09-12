@@ -568,6 +568,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Blokk-oppdateringsfrekvens">Blokk - oppdateringsfrekvens (dct:accrualPeriodicity) </a></li>
 <li><a href="#Blokk-creator">Blokk - produsent (dct:creator)</a></li>
 <li><a href="#Blokk-undertema">Blokk - undertema (cdvno:subTheme)</a></li>
+<li><a href="#Blokk-utgivelsesdato">Blokk - utgivelsesdato (dct:issued)</a></li>
 </ul>
 </li>
 </ul>
@@ -736,7 +737,7 @@ Vennligst meld dine tilbakemeldinger inn som <a href="https://github.com/Informa
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>under utvikling</mark><br>
-<strong>Sist oppdatert</strong>: 2023-08-17</p>
+<strong>Sist oppdatert</strong>: 2023-09-12</p>
 </div>
 </div>
 </div>
@@ -2148,6 +2149,52 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="content">
 <pre>&lt;aBlock&gt; a cdvno:Block; # blokk
    cdvno:subTheme &lt;https://w3id.org/demo-resources/demo-classifications#demo-category-A1&gt;; # subtema
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Blokk-utgivelsesdato"><a class="anchor" href="#Blokk-utgivelsesdato"></a>Blokk - utgivelsesdato (dct:issued)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>issued</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:issued</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi datoen for formell utgivelse/publisering av blokken.</p>
+<p class="tableblock"><em>This property is used to specify the date for the formal issuing/publication of the block.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aBlock&gt; a cdvno:Block; # blokk
+   dct:issued "2023-05-01"^^xsd:date; # utgivelsesdato
    .</pre>
 </div>
 </div>
@@ -4860,7 +4907,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-08-17 07:28:34 UTC
+Sist oppdatert 2023-09-12 09:37:33 UTC
 </div>
 </div>
 </body>

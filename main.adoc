@@ -21,7 +21,7 @@ NOTE: *Innmelding av feil og mangler:* +
 Vennligst meld dine tilbakemeldinger inn som https://github.com/Informasjonsforvaltning/cdvno/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 *Status*: #under utvikling# + 
-*Sist oppdatert*: 2023-08-17
+*Sist oppdatert*: 2023-09-12
 
 include::om_denne_versjon.adoc[]
 
