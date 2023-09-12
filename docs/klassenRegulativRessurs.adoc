@@ -150,7 +150,7 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| _English name_ |  title
+| _English name_ |  _title_
 | URI | dct:title
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi tittel til den regulative ressursen. Egenskapen bør gjentas bør tittelen finnes på flere språk.
@@ -174,7 +174,7 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| _English name_ | related legal resource
+| _English name_ | _related legal resource_
 | URI | dct:relation
 | Verdiområde / _Range_ |eli:LegalResource
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en annen relatert regulativ ressurs.
