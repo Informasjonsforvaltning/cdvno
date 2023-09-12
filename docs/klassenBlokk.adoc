@@ -529,3 +529,23 @@ Eksempel i RDF Turtle:
    .
 -----
 
+==== Blokk - utgivelsesdato (dct:issued) [[Blokk-utgivelsesdato]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _issued_
+| URI | dct:issued
+| Verdiområde / _Range_ | xsd:date
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi datoen for formell utgivelse/publisering av blokken.
+
+_This property is used to specify the date for the formal issuing/publication of the block._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aBlock> a cdvno:Block; # blokk
+   dct:issued "2023-05-01"^^xsd:date; # utgivelsesdato
+   .
+-----
