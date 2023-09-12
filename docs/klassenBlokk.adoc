@@ -44,7 +44,6 @@ _This property is used to specify the main language that the concent of the bloc
 | Merknad / _Note_ | Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"].
 
 __The value shall be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"].__
-| #Spørsmål# | #Kanskje for strengt? Trenger ikke å være obligatorisk, men anbefalt?# 
 |===
 
 Eksempel i RDF Turtle:
@@ -457,7 +456,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi hvem (ikke som individ, men gruppe) blokkens innhold handler om.
 
-_This property is used to specify whom (but as an individual, but as a group) the content of the block is about._
+_This property is used to specify whom (not as an individual, but as a group) the content of the block is about._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Verdien bør velges fra et kontrollert vokabular. 
