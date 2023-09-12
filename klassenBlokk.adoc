@@ -402,6 +402,27 @@ Eksempel i RDF Turtle:
    .
 -----
 
+==== Blokk - kilde (dct:source) [[Blokk-kilde]] 
+
+[cols="30s,70d"]
+|===
+| _English name_ | source
+| URI | dct:source
+| Verdiområde / _Range_ | cdvno:Block
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en blokk som gjeldende blokk er avledet fra.
+
+_This property is used refer to a block from which the described block is derived._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aBlock> a cdvno:Block; # blokk
+   dct:source <antherBlock>; # kilde
+   .
+-----
+
 ==== Blokk - målgruppe (dct:audience) [[Blokk-målgruppe]]  
 
 [cols="30s,70d"]
