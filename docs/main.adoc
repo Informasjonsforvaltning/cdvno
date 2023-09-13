@@ -42,3 +42,5 @@ include::klassenOrganisasjon.adoc[]
 include::klassenRegel.adoc[]
 
 include::klassenRegulativRessurs.adoc[]
+
+include::klassenRessurs.adoc[]
