@@ -542,7 +542,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Blokk-hovedspråk">Blokk - hovedspråk (dct:language)</a></li>
 <li><a href="#Blokk-identifikator">Blokk - identifikator (dct:identifier)</a></li>
-<li><a href="#Blokk-tema">Blokk - tema (dcat:theme)</a></li>
+<li><a href="#Blokk-tema">Blokk - sektor (dcat:theme)</a></li>
 <li><a href="#Blokk-utgiver">Blokk - utgiver (dct:publisher)</a></li>
 </ul>
 </li>
@@ -558,8 +558,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Blokk-valgfrie-egenskaper">Valgfrie egenskaper for <em>Blokk</em></a>
 <ul class="sectlevel3">
 <li><a href="#Blokk-brukerbehov">Blokk - brukerbehov (cdvno:userNeed)</a></li>
-<li><a href="#Blokk-data-opprettet">Blokk - dato opprettet (dct:created)</a></li>
-<li><a href="#Blokk-data-sist-oppdatert">Blokk - dato sist oppdatert (dct:modified)</a></li>
+<li><a href="#Blokk-dato-sist-oppdatert">Blokk - dato sist oppdatert (dct:modified)</a></li>
 <li><a href="#Blokk-følger">Blokk - følger (cpsv:follows)</a></li>
 <li><a href="#Blokk-gyldighetsperiode">Blokk - gyldighetsperiode (cv:validityPeriod)</a></li>
 <li><a href="#Blokk-har-relatert-regelverk">Blokk - har relatert regelverk (cv:hasLegalResource)</a></li>
@@ -738,7 +737,7 @@ Vennligst meld dine tilbakemeldinger inn som <a href="https://github.com/Informa
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>under utvikling</mark><br>
-<strong>Sist oppdatert</strong>: 2023-09-12</p>
+<strong>Sist oppdatert</strong>: 2023-09-13</p>
 </div>
 </div>
 </div>
@@ -1040,7 +1039,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="title">Figur 2. Klassen Blokk (cdvno:Block) og klassene den refererer til.</div>
 </div>
 <div class="paragraph">
-<p><a href="#img-klassenBlokk">Figur 2</a> viser klassen Blokk (<code>cdvno:Block</code>) og klassene den refererer til. Det som er <mark>gulet</mark> ut, er avvik fra <a href="https://data.norge.no/specification/dcat-ap-no#Datasett" class="ext-link" target="_blank" rel="noopener">DCAT-AP-NO sin klasse Datasett (dcat:Dataset) &#x29C9;</a>. Klassene som ikke er eksplisitt spesifisert i denne spesifikasjonen er ikke tatt med i figuren over eller i teksten under, f.eks. klassen Begrep (<code>skos:Concept</code>).</p>
+<p><a href="#img-klassenBlokk">Figur 2</a> viser klassen Blokk (<code>cdvno:Block</code>) og klassene den refererer til. Som vist i figuren er denne klassen en subklasse av <a href="https://data.norge.no/specification/dcat-ap-no#Datasett" class="ext-link" target="_blank" rel="noopener">DCAT-AP-NO sin klasse Datasett (dcat:Dataset) &#x29C9;</a>. Klassene som ikke er eksplisitt spesifisert i denne spesifikasjonen er ikke tatt med i figuren over eller i teksten under, f.eks. klassen Begrep (<code>skos:Concept</code>).</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1121,9 +1120,14 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language" class="ext-link" target="_blank" rel="noopener">Language &#x29C9;</a>.</p>
 <p class="tableblock"><em>The value shall be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language" class="ext-link" target="_blank" rel="noopener">Language &#x29C9;</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-N: Kravnivået er endret fra valgfri til obligatorisk og multiplisitet endret fra 0..n til 1..1.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: The requirement level is changed from optional to mandatroy, and the multiplicity from 0..n to 1..1._</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -1190,7 +1194,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Blokk-tema"><a class="anchor" href="#Blokk-tema"></a>Blokk - tema (dcat:theme)</h4>
+<h4 id="Blokk-tema"><a class="anchor" href="#Blokk-tema"></a>Blokk - sektor (dcat:theme)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1199,7 +1203,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>theme</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>sector</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -1223,9 +1227,14 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>, <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a>, og/eller andre sektorspesifikke taksonomier.</p>
 <p class="tableblock"><em>The value should be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>, <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a>, and/or other sector specific taxonomies.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Egenskapsnavnet er endret fra «tema» til «sektor». Dette fordi i konteksten av denne spesifikasjonen er EUs kontrollerte vokabularet som skal brukes for denne egenskapen, mer en sektorklassifisering enn dataklassifisering.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: The name of this property is changed from "theme" to "sector".</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -1271,7 +1280,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / Mandatory_</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -1323,8 +1332,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivå er endret fra obligatorisk til anbefalt, tilsvarende med multiplisitet fra 1..n til 0..n. Dette fordi ikke alle har beskrivelse på blokknivå som metadata.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivået er endret fra obligatorisk til anbefalt, tilsvarende med multiplisitet fra 1..n til 0..n. Dette fordi ikke alle har beskrivelse på blokknivå som metadata.</p>
 <p class="tableblock"><em>Extension compared to DCAT-AP-NO: The requirement level is changed from mandatory to recommended, and the multiplicity changed from 1..n to 0..n accordingly.</em></p></td>
 </tr>
 <tr>
@@ -1630,9 +1639,14 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra kontrollerte vokabularer, f.eks. EUs kommende kontrollerte vokabularer for livshendelser, sektorspesifikke kodeverk (SNOMED CT osv.) osv.</p>
 <p class="tableblock"><em>The value should be chosen from controlled vocabularies, e.g. EU&#8217;s coming controlled vocabularies for live events, sector specific classifications (SNOMED CT etc.) etc.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne spesifisere brukerbehov som blokkens innhold er relevant for.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify the user need for which the content of the block is relevant.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -1648,53 +1662,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Blokk-data-opprettet"><a class="anchor" href="#Blokk-data-opprettet"></a>Blokk - dato opprettet (dct:created)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>date created</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:created</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi datoen når blokkens innhold ble første gang opprettet.</p>
-<p class="tableblock"><em>This property is used to specify the date when the content of the block first time was created.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aBlock&gt; a cdvno:Block; # blokk
-   dct:created "2023-05-01"^^xsd:date; # dato opprettet
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Blokk-data-sist-oppdatert"><a class="anchor" href="#Blokk-data-sist-oppdatert"></a>Blokk - dato sist oppdatert (dct:modified)</h4>
+<h4 id="Blokk-dato-sist-oppdatert"><a class="anchor" href="#Blokk-dato-sist-oppdatert"></a>Blokk - dato sist oppdatert (dct:modified)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1774,7 +1742,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivå er endret fra anbefalt til valgfri.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivået er endret fra anbefalt til valgfri.</p>
 <p class="tableblock"><em>Extension compared to DCAT-AP-NO: The requirement level is changed from recommended to optional.</em></p></td>
 </tr>
 </tbody>
@@ -1823,6 +1791,11 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne spesifisere gyldighetsperiode for blokkens innhold.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify the validity period of the content of the block.</em></p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -1869,6 +1842,11 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne relatere blokken direkte til en regulativ ressurs.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to link the block directly to a legal resource.</em></p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -1900,12 +1878,12 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cdvno:Block</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Resource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en blokk som gjeldende blokk er avledet fra.</p>
-<p class="tableblock"><em>This property is used refer to a block from which the described block is derived.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en ressurs som gjeldende blokk er avledet fra.</p>
+<p class="tableblock"><em>This property is used refer to a resource from which the described block is derived.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -1914,6 +1892,11 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-N: Verdiområdet er endret fra dcat:Dataset til dcat:Resource.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: The range is changed from dcat:Dataset to dcat:Resource.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -1966,6 +1949,11 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra et kontrollert vokabular.</p>
 <p class="tableblock"><em>The value should be chosen from a controlled vocabulary.</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne spesifisere målgruppen som blokkens innhold er primært ment for.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify the audience that the content of the block is primarily meant for.</em></p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -2017,9 +2005,14 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra et kontrollert vokabular.</p>
 <p class="tableblock"><em>The value should be chosen from a controlled vocabulary.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne spesifisere hvem blokkens innhold handler om.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify whom the content of the block is about.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -2180,8 +2173,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne oppgi tema som ikke er inkludert i de obligatoriske/anbefalte taksonomiene for egenskap <a href="#Blokk-tema">Blokk - tema (dcat:theme)</a>.</p>
-<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify theme that is not included in the mandatory/recommended taxonomies for the property <a href="#Blokk-tema">Blokk - tema (dcat:theme)</a></em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne oppgi tema som ikke er inkludert i de obligatoriske/anbefalte taksonomiene for egenskap <a href="#Blokk-tema">Blokk - sektor (dcat:theme)</a>.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify theme that is not included in the mandatory/recommended taxonomies for the property <a href="#Blokk-tema">Blokk - sektor (dcat:theme)</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -4950,7 +4943,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-09-12 12:14:40 UTC
+Sist oppdatert 2023-09-13 12:22:19 UTC
 </div>
 </div>
 </body>
