@@ -5,7 +5,7 @@
 [link=images/cdvno-classes-only.png]
 image::images/cdvno-classes-only.png[]
 
-<<img-cdvno>> ovenfor inneholder et forslag til metadatamodellen. Forslaget gjenbruker https://data.norge.no/specification/dcat-ap-no["Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;", window="_blank", role="ext-link"]. Det som er #gulet# ut i tegningen, er avvik fra DCAT-AP-NO.  
+<<img-cdvno>> ovenfor inneholder et forslag til metadatamodellen. Forslaget gjenbruker https://data.norge.no/specification/dcat-ap-no["Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;", window="_blank", role="ext-link"].   
 
 Kort forklaring til metadatamodellen: 
 
