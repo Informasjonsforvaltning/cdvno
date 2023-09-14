@@ -225,7 +225,7 @@ Eksempel i RDF Turtle:
 | _English name_ | _title_
 | URI | dct:title
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi tittelen til blokken. Egenskapen bør gjentas når beskrivelsen finnes på flere språk. 
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi tittelen til blokken. Egenskapen bør gjentas når tittelen finnes på flere språk. 
 
 _This property is used to specify the title of the block. This property should be repeated for parallel language versions of the title._
 | Multiplisitet / _Multiplicity_ |  0..n
