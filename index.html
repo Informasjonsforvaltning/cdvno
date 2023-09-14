@@ -699,7 +699,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Ressurs">Klassen Ressurs (dcat:Resource)</a></li>
+<li><a href="#Ressurs">Klassen Ressurs (dcat:Resource)</a>
+<ul class="sectlevel2">
+<li><a href="#Ressurs-anbefalte-egenskaper">Anbefalte egenskaper for <em>Ressurs</em></a>
+<ul class="sectlevel3">
+<li><a href="#Ressurs-identifikator">Ressurs - identifikator (dct:identifier)</a></li>
+<li><a href="#Ressurs-tittel">Ressurs - tittel (dct:title)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -4969,15 +4978,126 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="sect1">
 <h2 id="Ressurs"><a class="anchor" href="#Ressurs"></a>Klassen Ressurs (dcat:Resource)</h2>
 <div class="sectionbody">
+<div id="img-klassenRessurs" class="imageblock">
+<div class="content">
+<a class="image" href="images/cdvno-resource.png"><img src="images/cdvno-resource.png" alt="cdvno resource"></a>
+</div>
+<div class="title">Figur 8. Klassen Ressurs (cdvno:Block).</div>
+</div>
 <div class="paragraph">
-<p><mark><em>kommer</em></mark></p>
+<p><a href="#img-klassenRessurs">Figur 8</a> viser klassen Ressurs (<code>dcat:Resource</code>).</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Resource</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en ressurs som f.eks. er kilde til innholdet i en blokk.</p>
+<p class="tableblock"><em>The class is used to represent a resource which is e.g. the source of origin to the content in a block.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I tillegg til egenskapene spesifisert her, kan egenskapene til <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Resource" class="ext-link" target="_blank" rel="noopener">klassen Katalogisert ressurs (dcat:Resource) spesifisert i DCAT &#x29C9;</a> også brukes.</p>
+<p class="tableblock"><em>In addition to the properties that are specified here, the properties in <a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Resource" class="ext-link" target="_blank" rel="noopener">the Class Cataloged Resource (dcat:Resource) specified in DCAT &#x29C9;</a> may also be used.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="Ressurs-anbefalte-egenskaper"><a class="anchor" href="#Ressurs-anbefalte-egenskaper"></a>Anbefalte egenskaper for <em>Ressurs</em></h3>
+<div class="sect3">
+<h4 id="Ressurs-identifikator"><a class="anchor" href="#Ressurs-identifikator"></a>Ressurs - identifikator (dct:identifier)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>identifier</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:anyURI</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi identifikatoren til ressursen.</p>
+<p class="tableblock"><em>This property is used to specify the identifier to the resource.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Ressurs-tittel"><a class="anchor" href="#Ressurs-tittel"></a>Ressurs - tittel (dct:title)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>title</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi tittelen til ressursen. Egenskapen bør gjentas når tittelen finnes på flere språk.</p>
+<p class="tableblock"><em>This property is used to specify the title of the resource. This property should be repeated for parallel language versions of the title.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-09-14 08:48:27 UTC
+Sist oppdatert 2023-09-14 08:57:37 UTC
 </div>
 </div>
 </body>
