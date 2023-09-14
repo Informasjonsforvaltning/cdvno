@@ -36,7 +36,7 @@ _This property is used to specify the identifier to the resource._
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
-==== Ressurs - tittel (dct:title) [[Ressurs-tittel]]  
+==== Ressurs - tittel (dct:title) [[Ressurs-tittel]] 
 
 [cols="30s,70d"]
 |===
