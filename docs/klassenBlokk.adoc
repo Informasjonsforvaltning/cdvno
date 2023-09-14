@@ -301,7 +301,7 @@ _Extension compared to DCAT-AP-NO: This property is not explicitly specified in 
 Eksempel i RDF Turtle:
 -----
 <aBlock> a cdvno:Block; # blokk
-   cdvno:userNeed <https://data.norge.no/vocabulary/life-event-type#becoming-a-caretaker>; 
+   cdvno:userNeed <http://data.europa.eu/ox8/life-event/BSC>; # Life event "becoming a (social) caretaker"
    .
 -----
 
