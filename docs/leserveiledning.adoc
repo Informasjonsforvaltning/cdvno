@@ -21,7 +21,7 @@ Eksempel: Verdiområde `skos:Concept` betyr at verdien til egenskapen skal være
 | Multiplisitet / _Multiplicity_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/bør/kan ha.
 | Kravnivå / _Requirement level_ | Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Om-kravnivåene>>.
 | Merknad / _Note_ | Brukes til merknader knyttet til bruk av klassen eller egenskapen, f.eks. restriksjoner hvis noen. Merknadene er også skrevet på engelsk (_Note_, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.
-| Eksempel / _Example_ | Eksempler på bruk av egenskapen, i prosatekst. Eksempel i RDF Turtle følger etter den aktuelle tabellen, som dog er tekniske eksempler som ikke alltid uttrykker det samme som i prosatekst-eksemplene. 
+| Eksempel / _Example_ | Eksempler på bruk av klassen eller egenskapen, i prosatekst. Eksempel i RDF Turtle følger etter den aktuelle tabellen, som dog er tekniske eksempler som ikke alltid uttrykker det samme som i prosatekst-eksemplene. 
 
-_Examples on the usage of the property, expressed in prose text. Examples in RDF Turtle follow the actual table which though are technical examples that do not necessarily express the same as the prose text examples._  
+_Examples on the usage of the class or property, expressed in prose text. Examples in RDF Turtle follow the actual table which though are technical examples that do not necessarily express the same as the prose text examples._  
 |===
