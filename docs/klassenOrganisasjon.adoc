@@ -16,6 +16,9 @@ image::images/cdvno-organization.png[]
 _The class is used to represent an organization._
 | URI | org:Organization
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Utvidelse sammenlignet med DCAT-AP-NO: DCAT-AP-NO har foaf:Agent som obligatorisk klasse, mens denne spesifikasjonen har dens subklasse org:Organization som en obligatorisk klasse. Dette for å si eksplisitt at aktører (foaf:Agent) i konteksten av denne spesifikasjon skal være virksomhet (org:Organization).
+
+_Extension compared to DCAT-AP-NO: DCAT-AP-NO has foaf:Agent as a mandatory class, while this specification uses its subclass org:Organization as a mandatory class._ 
 |===
 
 Eksempel i RDF Turtle:

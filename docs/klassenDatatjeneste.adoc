@@ -245,6 +245,9 @@ Eksempel i RDF Turtle:
 _This property is used to refer to the organization who is responsible for making the service available._ 
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Utvidelse sammenlignet med DCAT-AP-NO: Verdiområdet er endret fra foaf:Agent til org:Organization (som er en subklasse av foaf:Agent). Dette for å si eksplisitt at en utgiver skal være en virksomhet og ikke f.eks. en enkeltperson. 
+
+_Extension compared to DCAT-AP-NO: The range is changed from foaf:Agent to org:Organization (which is a subclass of foaf:Agent)._
 |===
 
 Eksempel i RDF Turtle:

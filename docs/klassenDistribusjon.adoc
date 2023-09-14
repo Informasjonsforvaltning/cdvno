@@ -339,6 +339,9 @@ Eksempel i RDF Turtle:
 _This property is used to specify the size or duration of the resource._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne oppgi f.eks. varighet til et videoklipp.  
+
+_Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO._ 
 |===
 
 Eksempel i RDF Turtle:
