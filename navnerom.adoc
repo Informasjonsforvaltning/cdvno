@@ -1,6 +1,6 @@
 === Navnerom som er brukt i spesifikasjonen [[Navnerom]]
 
-Navnerom for denne spesifikasjonen er https://informasjonsforvaltning.github.io/cdvno# (##det skal være en offisiell URI etter ferdigstilling av spesifikasjonen, mest sannsynlig `\https://data.norge.no/vocabulary/cdvno#`##)
+Navnerom for denne spesifikasjonen er `\https://informasjonsforvaltning.github.io/cdvno#` (##det skal være en offisiell URI etter ferdigstilling av spesifikasjonen, mest sannsynlig `\https://data.norge.no/vocabulary/cdvno#`##)
 
 [[Tabell-navnerom]]
 .Oversikt over navnerom som er brukt i denne spesifikasjonen (tabellen nedenfor er deskriptiv)

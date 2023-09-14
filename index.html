@@ -542,7 +542,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Blokk-hovedspråk">Blokk - hovedspråk (dct:language)</a></li>
 <li><a href="#Blokk-identifikator">Blokk - identifikator (dct:identifier)</a></li>
-<li><a href="#Blokk-tema">Blokk - sektor (dcat:theme)</a></li>
+<li><a href="#Blokk-tema">Blokk - tema (dcat:theme)</a></li>
 <li><a href="#Blokk-utgiver">Blokk - utgiver (dct:publisher)</a></li>
 </ul>
 </li>
@@ -785,10 +785,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <p>Spesifikasjonen er anbefalt brukt til å beskrive innhold som er publisert eller ment å publiseres på nett, samt å utveksle/tilgjengeliggjøre beskrivelsene. Spesifikasjonen er basert på <a href="https://data.norge.no/specification/dcat-ap-no/" class="ext-link" target="_blank" rel="noopener">Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;</a>, med utvidelser for å dekke behov identifisert gjennom utarbeidelsen av spesifikasjonen.</p>
 </div>
 <div class="paragraph">
-<p>Spesifikasjonen inneholder også engelske navn (<em>English name</em>) og anvendelsesbeskrivelser (<em>Usage note</em>). Det gjøres oppmerksom på at engelske navn eller anvendelsesbeskrivelser ikke alle er ordrett sitat fra originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).</p>
+<p>Spesifikasjonen inneholder også engelske navn (<em>English name</em>) og anvendelsesbeskrivelser (<em>Usage note</em>). Det gjøres oppmerksom på at engelske navn eller anvendelsesbeskrivelser ikke alle er ordrette sitater fra originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).</p>
 </div>
 <div class="paragraph">
-<p>Ettersom spesifikasjonen er basert på <a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">RDF &#x29C9;</a>, vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.</p>
+<p>Ettersom spesifikasjonen er basert på <a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">RDF &#x29C9;</a>, vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i <a href="https://www.w3.org/TR/turtle/" class="ext-link" target="_blank" rel="noopener">RDF Turtle &#x29C9;</a>. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.</p>
 </div>
 </div>
 <div class="sect2">
@@ -815,13 +815,13 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="sect2">
 <h3 id="Om-kravnivåene"><a class="anchor" href="#Om-kravnivåene"></a>Om kravnivåene i spesifikasjonen</h3>
 <div class="paragraph">
-<p>Spesifikasjonen bruker ordene «obligatorisk/skal» (<em>"mandatory/shall"</em>), «anbefalt/bør» (<em>"recommended/should"</em>) og «valgfri/kan» (<em>"optional/may"</em>). Disse er forklart i <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene" class="ext-link" target="_blank" rel="noopener">DCAT-AP-NO &#x29C9;</a>, og forklaringene gjentas ikke her.</p>
+<p>Spesifikasjonen bruker ordene «obligatorisk/skal» (<em>"mandatory/shall"</em>), «anbefalt/bør» (<em>"recommended/should"</em>) og «valgfri/kan» (<em>"optional/may"</em>). Disse er <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene" class="ext-link" target="_blank" rel="noopener">forklart i DCAT-AP-NO &#x29C9;</a>, og forklaringene gjentas ikke her.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="Navnerom"><a class="anchor" href="#Navnerom"></a>Navnerom som er brukt i spesifikasjonen</h3>
 <div class="paragraph">
-<p>Navnerom for denne spesifikasjonen er <a href="https://informasjonsforvaltning.github.io/cdvno#" class="bare">https://informasjonsforvaltning.github.io/cdvno#</a> (<mark>det skal være en offisiell URI etter ferdigstilling av spesifikasjonen, mest sannsynlig <code>https://data.norge.no/vocabulary/cdvno#</code></mark>)</p>
+<p>Navnerom for denne spesifikasjonen er <code>https://informasjonsforvaltning.github.io/cdvno#</code> (<mark>det skal være en offisiell URI etter ferdigstilling av spesifikasjonen, mest sannsynlig <code>https://data.norge.no/vocabulary/cdvno#</code></mark>)</p>
 </div>
 <table id="Tabell-navnerom" class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Tabell 1. Oversikt over navnerom som er brukt i denne spesifikasjonen (tabellen nedenfor er deskriptiv)</caption>
@@ -975,8 +975,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Eksempler på bruk av egenskapen, i prosatekst. Eksempel i RDF Turtle følger etter den aktuelle tabellen, som dog er tekniske eksempler som ikke alltid uttrykker det samme som i prosatekst-eksemplene.</p>
-<p class="tableblock"><em>Examples on the usage of the property, expressed in prose text. Examples in RDF Turtle follow the actual table which though are technical examples that do not necessarily express the same as the prose text examples.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eksempler på bruk av klassen eller egenskapen, i prosatekst. Eksempel i RDF Turtle følger etter den aktuelle tabellen, som dog er tekniske eksempler som ikke alltid uttrykker det samme som i prosatekst-eksemplene.</p>
+<p class="tableblock"><em>Examples on the usage of the class or property, expressed in prose text. Examples in RDF Turtle follow the actual table which though are technical examples that do not necessarily express the same as the prose text examples.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -993,10 +993,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="title">Figur 1. Forenklet metadatamodell, kun på klassenivå.</div>
 </div>
 <div class="paragraph">
-<p><a href="#img-cdvno">Figur 1</a> ovenfor inneholder et forslag til metadatamodellen. Forslaget gjenbruker <a href="https://data.norge.no/specification/dcat-ap-no" class="ext-link" target="_blank" rel="noopener">Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;</a>.</p>
+<p><a href="#img-cdvno">Figur 1</a> ovenfor inneholder <mark>et forslag til</mark> metadatamodellen. Forslaget gjenbruker <a href="https://data.norge.no/specification/dcat-ap-no" class="ext-link" target="_blank" rel="noopener">Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;</a>.</p>
 </div>
 <div class="paragraph">
-<p>Kort forklaring til metadatamodellen:</p>
+<p>En kort og forenklet forklaring til metadatamodellen er som følger:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1080,8 +1080,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I tillegg til egenskapene spesifisert her, kan egenskapene til klassen Datasett (dcat:Dataset) spesifisert i <a href="https://data.norge.no/specification/dcat-ap-no#Datasett" class="ext-link" target="_blank" rel="noopener">DCAT-AP-NO &#x29C9;</a> også brukes.</p>
-<p class="tableblock"><em>In addition to the properties that are specified here, the properties in the class Dataset (dcat:Dataset) specified in <a href="https://data.norge.no/specification/dcat-ap-no#Datasett" class="ext-link" target="_blank" rel="noopener">DCAT-AP-NO &#x29C9;</a> (in Norwegian) may also be used</em>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I tillegg til egenskapene spesifisert her, kan egenskapene til <a href="https://data.norge.no/specification/dcat-ap-no#Datasett" class="ext-link" target="_blank" rel="noopener">klassen Datasett (dcat:Dataset) spesifisert i DCAT-AP-NO &#x29C9;</a> også brukes.</p>
+<p class="tableblock"><em>In addition to the properties that are specified here, the properties in <a href="https://data.norge.no/specification/dcat-ap-no#Datasett" class="ext-link" target="_blank" rel="noopener">the class Dataset (dcat:Dataset) specified in DCAT-AP-NO &#x29C9;</a> (in Norwegian) may also be used.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -1198,13 +1198,13 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="listingblock">
 <div class="content">
 <pre>&lt;aBlock&gt; a cdvno:Block; # blokk
-   dct:identifier &lt;https://example.org/aBlock&gt;;
+   dct:identifier &lt;https://informasjonsforvaltning.github.io/cdvno/test#block1&gt;;
    .</pre>
 </div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Blokk-tema"><a class="anchor" href="#Blokk-tema"></a>Blokk - sektor (dcat:theme)</h4>
+<h4 id="Blokk-tema"><a class="anchor" href="#Blokk-tema"></a>Blokk - tema (dcat:theme)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1213,7 +1213,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>sector</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>theme</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -1226,7 +1226,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi tema som blokkens innhold handler om.</p>
-<p class="tableblock"><em>This property is used to specify the theme which the content of the block is about.</em></p></td>
+<p class="tableblock"><em>This property is used to specify the theme that the content of the block is about.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -1237,14 +1237,9 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>, <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a>, og/eller andre sektorspesifikke taksonomier.</p>
 <p class="tableblock"><em>The value should be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>, <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a>, and/or other sector specific taxonomies.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Egenskapsnavnet er endret fra «tema» til «sektor». Dette fordi i konteksten av denne spesifikasjonen er EUs kontrollerte vokabular som skal brukes for denne egenskapen, mer en sektorklassifisering enn datatematisering.</p>
-<p class="tableblock"><em>Extension compared to DCAT-AP-NO: The name of this property is changed from "theme" to "sector".</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -1294,7 +1289,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Verdiområdet er endret fra foaf:Agent til org:Organization (som er en subklasse av foaf:Agent). Dette for å si eksplisitt at en utgiver skal være en virksomhet og ikke f.eks. en enkeltperson.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Verdiområdet er endret fra foaf:Agent til org:Organization (som er en subklasse av foaf:Agent). Dette fordi en utgiver i konteksten av denne spesifikasjonen skal være en virksomhet og ikke f.eks. en enkeltperson.</p>
 <p class="tableblock"><em>Extension compared to DCAT-AP-NO: The range is changed from foaf:Agent to org:Organization (which is a subclass of foaf:Agent).</em></p></td>
 </tr>
 </tbody>
@@ -1348,7 +1343,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivået er endret fra obligatorisk til anbefalt, tilsvarende med multiplisitet fra 1..n til 0..n. Dette fordi ikke alle har beskrivelse på blokknivå som metadata.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivået er endret fra obligatorisk til anbefalt, tilsvarende med multiplisitet fra 1..n til 0..n. Dette fordi det ikke alltid finnes eller er nødvendig å ha en beskrivelse som metadata på blokknivå.</p>
 <p class="tableblock"><em>Extension compared to DCAT-AP-NO: The requirement level is changed from mandatory to recommended, and the multiplicity changed from 1..n to 0..n accordingly.</em></p></td>
 </tr>
 <tr>
@@ -1379,7 +1374,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>spatial coverage</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>spatial or administrative coverage</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -1410,7 +1405,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="ulist">
 <ul>
 <li>
-<p>Minst en verdi skal velges fra en av følgende kontrollerte vokabularer: <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Kontinent &#x29C9;</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Land &#x29C9;</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Sted &#x29C9;</a>.</p>
+<p>Minst én verdi skal velges fra en av følgende kontrollerte vokabularer: <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Kontinent &#x29C9;</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Land &#x29C9;</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Sted &#x29C9;</a>.</p>
 </li>
 <li>
 <p>For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative enheter &#x29C9;</a> brukes.</p>
@@ -1429,7 +1424,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <p><em>At least one value shall be chosen from the following controlled vocabularies: <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Country &#x29C9;</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>.</em></p>
 </li>
 <li>
-<p><em>To specify spatial coverage in Norway, the Norwegian Mapping Authority&#8217;s controlled vocabulary <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> should be used.</em></p>
+<p><em>To specify spatial or administrative coverage in Norway, the Norwegian Mapping Authority&#8217;s controlled vocabulary <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> should be used.</em></p>
 </li>
 <li>
 <p><em>Other spatial or administrative subdivision of Norway may be used. E.g. health region, school district etc.</em></p>
@@ -1531,7 +1526,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivå er endret fra obligatorisk til anbefalt, tilsvarende med multiplisitet fra 1..n til 0..n. Dette fordi ikke alle har tittel på blokknivå som metadata.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivå er endret fra obligatorisk til anbefalt, tilsvarende med multiplisitet fra 1..n til 0..n. Dette fordi det ikke alltid finnes eller er nødvendig å ha tittel som metadata på blokknivå.</p>
 <p class="tableblock"><em>Extension compared to DCAT-AP-NO: The requirement level is changed from mandatory to recommended, and the multiplicity changed from 1..n to 0..n accordingly.</em></p></td>
 </tr>
 <tr>
@@ -1655,8 +1650,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra kontrollerte vokabularer, f.eks. EUs kommende kontrollerte vokabularer for livshendelser, sektorspesifikke kodeverk (f.eks. SNOMED CT) osv.</p>
-<p class="tableblock"><em>The value should be chosen from controlled vocabularies, e.g. EU&#8217;s coming controlled vocabularies for live events, sector specific classifications (e.g. SNOMED CT) etc.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra kontrollerte vokabularer, f.eks. EUs kontrollerte vokabularer for <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/life-event" class="ext-link" target="<em>blank">livshendelse &#x29C9;"</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/business-event" class="ext-link" target="_blank" rel="noopener">virksomhetshendelse &#x29C9;"</a> eller lignende, eller sektorspesifikke vokabularer (f.eks. <a href="https://browser.ihtsdotools.org/" class="ext-link" target="_blank" rel="noopener">SNOMED CT &#x29C9;"</a>) osv.</p>
+<p class="tableblock">_The value should be chosen from controlled vocabularies, e.g. EU&#8217;s controlled vocabularies for <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/life-event" class="ext-link" target="_blank" rel="noopener">Live event &#x29C9;"</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/business-event" class="ext-link" target="_blank" rel="noopener">Business event &#x29C9;"</a> or suchlike, or sector specific vocabularies (e.g. <a href="https://browser.ihtsdotools.org/" class="ext-link" target="_blank" rel="noopener">SNOMED CT &#x29C9;"</a>) etc.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
@@ -2193,8 +2188,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne oppgi tema som ikke er inkludert i de obligatoriske/anbefalte taksonomiene for egenskap <a href="#Blokk-tema">Blokk - sektor (dcat:theme)</a>.</p>
-<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify theme that is not included in the mandatory/recommended taxonomies for the property <a href="#Blokk-tema">Blokk - sektor (dcat:theme)</a></em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne oppgi tema som ikke er inkludert i de obligatoriske/anbefalte taksonomiene for egenskap <a href="#Blokk-tema">Blokk - tema (dcat:theme)</a>.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify theme that is not included in the mandatory/recommended taxonomies for the property <a href="#Blokk-tema">Blokk - tema (dcat:theme)</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -5097,7 +5092,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-09-14 09:03:00 UTC
+Sist oppdatert 2023-09-14 11:24:56 UTC
 </div>
 </div>
 </body>

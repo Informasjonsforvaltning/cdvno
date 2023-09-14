@@ -9,9 +9,9 @@ Formålet med spesifikasjonen er å legge til rette for en felles måte å beskr
 
 Spesifikasjonen er anbefalt brukt til å beskrive innhold som er publisert eller ment å publiseres på nett, samt å utveksle/tilgjengeliggjøre beskrivelsene. Spesifikasjonen er basert på https://data.norge.no/specification/dcat-ap-no/["Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;", window="_blank", role="ext-link"], med utvidelser for å dekke behov identifisert gjennom utarbeidelsen av spesifikasjonen. 
 
-Spesifikasjonen inneholder også engelske navn (_English name_) og anvendelsesbeskrivelser (_Usage note_). Det gjøres oppmerksom på at engelske navn eller anvendelsesbeskrivelser ikke alle er ordrett sitat fra originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
+Spesifikasjonen inneholder også engelske navn (_English name_) og anvendelsesbeskrivelser (_Usage note_). Det gjøres oppmerksom på at engelske navn eller anvendelsesbeskrivelser ikke alle er ordrette sitater fra originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
 
-Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF &#x29C9;, window="_blank", role="ext-link"], vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
+Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF &#x29C9;, window="_blank", role="ext-link"], vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i https://www.w3.org/TR/turtle/[RDF Turtle &#x29C9;, window="_blank", role="ext-link"]. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
 
 === Målgrupper [[Målgrupper]]
 
@@ -29,7 +29,7 @@ Utarbeidelse av nye versjoner av spesifikasjonen initieres av Digdir. Mindre end
 
 === Om kravnivåene i spesifikasjonen [[Om-kravnivåene]]
 
-Spesifikasjonen bruker ordene «obligatorisk/skal» (_"mandatory/shall"_), «anbefalt/bør» (_"recommended/should"_) og «valgfri/kan» (_"optional/may"_). Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], og forklaringene gjentas ikke her.
+Spesifikasjonen bruker ordene «obligatorisk/skal» (_"mandatory/shall"_), «anbefalt/bør» (_"recommended/should"_) og «valgfri/kan» (_"optional/may"_). Disse er https://data.norge.no/specification/dcat-ap-no/#Om-kravene[forklart i DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], og forklaringene gjentas ikke her.
 
 include::navnerom.adoc[]
 
