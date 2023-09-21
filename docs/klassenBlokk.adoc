@@ -29,6 +29,30 @@ Eksempel i RDF Turtle:
 
 === Obligatoriske egenskaper for _Blokk_ [[Blokk-obligatoriske-egenskaper]]
 
+==== Blokk - dato sist oppdatert (dct:modified) [[Blokk-dato-sist-oppdatert]]  
+
+[cols="30s,70d"]
+|===
+| _English name_ | _date modified_
+| URI | dct:modified
+| Verdiområde / _Range_ | xsd:date
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi datoen når blokkens innhold sist ble oppdatert. 
+
+_This property is used to specify the date when the content of the block was last time modified._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Utvidelse sammenlignet med DCAT-AP-NO: Kravnivået er endret fra valgfri til obligatorisk og multiplisitet endret fra 0..1 til 1..1. 
+
+_Extension compared to DCAT-AP-NO: The requirement level is changed from optional to mandatory, and the multiplicity from 0..1 to 1..1._
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aBlock> a cdvno:Block; # blokk
+   dct:modified "2023-05-10"^^xsd:date; # dato sist oppdatert
+   .
+-----
+
 ==== Blokk - hovedspråk (dct:language) [[Blokk-hovedspråk]]  
 
 [cols="30s,70d"]
@@ -96,15 +120,36 @@ _This property is used to specify the theme that the content of the block is abo
 | Merknad / _Note_ | Verdien bør velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"], https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"], og/eller andre sektorspesifikke taksonomier. 
 
 __The value should be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"], https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"], and/or other sector specific taxonomies.__
-// | Merknad 2 / _Note 2_ | Utvidelse sammenlignet med DCAT-AP-NO: Egenskapsnavnet er endret fra «tema» til «sektor». Dette fordi i konteksten av denne spesifikasjonen er EUs kontrollerte vokabular som skal brukes for denne egenskapen, mer en sektorklassifisering enn datatematisering.
-//
-//__Extension compared to DCAT-AP-NO: The name of this property is changed from "theme" to "sector".__
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aBlock> a cdvno:Block; # blokk
    dcat:theme <https://psi.norge.no/los/tema/avlastning-og-stotte>; # Los, avlastning og støtte
+   .
+-----
+
+==== Blokk - utgivelsesdato (dct:issued) [[Blokk-utgivelsesdato]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _issued_
+| URI | dct:issued
+| Verdiområde / _Range_ | xsd:date
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi datoen for formell utgivelse/publisering av blokken.
+
+_This property is used to specify the date for the formal issuing/publication of the block._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Optional_
+| Merknad / _Note_ | Utvidelse sammenlignet med DCAT-AP-NO: Kravnivået er endret fra valgfri til obligatorisk og multiplisitet endret fra 0..1 til 1..1. 
+
+_Extension compared to DCAT-AP-NO: The requirement level is changed from optional to mandatory, and the multiplicity from 0..1 to 1..1._
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aBlock> a cdvno:Block; # blokk
+   dct:issued "2023-05-01"^^xsd:date; # utgivelsesdato
    .
 -----
 
@@ -218,6 +263,33 @@ Eksempel i RDF Turtle:
    .
 -----
 
+==== Blokk - målgruppe (dct:audience) [[Blokk-målgruppe]]  
+
+[cols="30s,70d"]
+|===
+| _English name_ | _audience_
+| URI | dct:audience
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi målgruppe som blokkens innhold er ment for, dvs. typiske lesere.
+
+_This property is used to specify the audience that the content of the block is meant for, i.e., typical readers._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Verdien bør velges fra et kontrollert vokabular. 
+
+_The value should be chosen from a controlled vocabulary._ 
+| Merknad 2 / _Note 2_ | Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne spesifisere målgruppen som blokkens innhold er primært ment for. 
+
+_Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify the audience that the content of the block is primarily meant for._ 
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aBlock> a cdvno:Block; # blokk
+   dct:audience <>; # målgruppe
+   .
+-----
+
 ==== Blokk - tittel (dct:title) [[Blokk-tittel]]  
 
 [cols="30s,70d"]
@@ -302,27 +374,6 @@ Eksempel i RDF Turtle:
 -----
 <aBlock> a cdvno:Block; # blokk
    cdvno:userNeed <http://data.europa.eu/ox8/life-event/BSC>; # Life event "becoming a (social) caretaker"
-   .
------
-
-==== Blokk - dato sist oppdatert (dct:modified) [[Blokk-dato-sist-oppdatert]]  
-
-[cols="30s,70d"]
-|===
-| _English name_ | _date modified_
-| URI | dct:modified
-| Verdiområde / _Range_ | xsd:date
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi datoen når blokkens innhold sist ble oppdatert. 
-
-_This property is used to specify the date when the content of the block was last time modified._
-| Multiplisitet / _Multiplicity_ | 0..1
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-|===
-
-Eksempel i RDF Turtle:
------
-<aBlock> a cdvno:Block; # blokk
-   dct:modified "2023-05-10"^^xsd:date; # dato sist oppdatert
    .
 -----
 
@@ -558,23 +609,3 @@ Eksempel i RDF Turtle:
    .
 -----
 
-==== Blokk - utgivelsesdato (dct:issued) [[Blokk-utgivelsesdato]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _issued_
-| URI | dct:issued
-| Verdiområde / _Range_ | xsd:date
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi datoen for formell utgivelse/publisering av blokken.
-
-_This property is used to specify the date for the formal issuing/publication of the block._
-| Multiplisitet / _Multiplicity_ | 0..1
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-|===
-
-Eksempel i RDF Turtle:
------
-<aBlock> a cdvno:Block; # blokk
-   dct:issued "2023-05-01"^^xsd:date; # utgivelsesdato
-   .
------
