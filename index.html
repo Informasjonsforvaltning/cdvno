@@ -565,7 +565,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Blokk-gyldighetsperiode">Blokk - gyldighetsperiode (cv:validityPeriod)</a></li>
 <li><a href="#Blokk-har-relatert-regelverk">Blokk - har relatert regelverk (cv:hasLegalResource)</a></li>
 <li><a href="#Blokk-kilde">Blokk - kilde (dct:source)</a></li>
-<li><a href="#Blokk-målgruppe">Blokk - målgruppe (dct:audience)</a></li>
 <li><a href="#Blokk-omhandler">Blokk - omhandler (cdvno:subjectGroup)</a></li>
 <li><a href="#Blokk-oppdateringsfrekvens">Blokk - oppdateringsfrekvens (dct:accrualPeriodicity) </a></li>
 <li><a href="#Blokk-creator">Blokk - produsent (dct:creator)</a></li>
@@ -2035,62 +2034,6 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Blokk-målgruppe"><a class="anchor" href="#Blokk-målgruppe"></a>Blokk - målgruppe (dct:audience)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>audience</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:audience</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi målgruppe som blokkens innhold er ment for, dvs. typiske lesere.</p>
-<p class="tableblock"><em>This property is used to specify the audience that the content of the block is meant for, i.e., typical readers.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra et kontrollert vokabular.</p>
-<p class="tableblock"><em>The value should be chosen from a controlled vocabulary.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne spesifisere målgruppen som blokkens innhold er primært ment for.</p>
-<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify the audience that the content of the block is primarily meant for.</em></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aBlock&gt; a cdvno:Block; # blokk
-   dct:audience &lt;&gt;; # målgruppe
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
 <h4 id="Blokk-omhandler"><a class="anchor" href="#Blokk-omhandler"></a>Blokk - omhandler (cdvno:subjectGroup)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2267,7 +2210,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>type</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>subtheme</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -2288,7 +2231,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -5159,7 +5102,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-09-21 14:09:11 UTC
+Sist oppdatert 2023-09-21 14:29:12 UTC
 </div>
 </div>
 </body>

@@ -473,33 +473,6 @@ Eksempel i RDF Turtle:
    .
 -----
 
-==== Blokk - målgruppe (dct:audience) [[Blokk-målgruppe]]  
-
-[cols="30s,70d"]
-|===
-| _English name_ | _audience_
-| URI | dct:audience
-| Verdiområde / _Range_ | skos:Concept
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi målgruppe som blokkens innhold er ment for, dvs. typiske lesere.
-
-_This property is used to specify the audience that the content of the block is meant for, i.e., typical readers._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad 1 / _Note 1_ | Verdien bør velges fra et kontrollert vokabular. 
-
-_The value should be chosen from a controlled vocabulary._ 
-| Merknad 2 / _Note 2_ | Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne spesifisere målgruppen som blokkens innhold er primært ment for. 
-
-_Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify the audience that the content of the block is primarily meant for._ 
-|===
-
-Eksempel i RDF Turtle:
------
-<aBlock> a cdvno:Block; # blokk
-   dct:audience <>; # målgruppe
-   .
------
-
 ==== Blokk - omhandler (cdvno:subjectGroup) [[Blokk-omhandler]]  
 
 [cols="30s,70d"]
@@ -585,14 +558,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| _English name_ | _type_
+| _English name_ | _subtheme_
 | URI | cdvno:subTheme
 | Subegenskap av / _Sunproperty of_ | dcat:theme
 | Verdiområde / _Range_ | skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi subtema som blokkens innhold handler om.
 
 _This property is used to specify the subtheme which the content of the block is about._
-| Multiplisitet / _Multiplicity_ | 0..1
+| Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad 1 / _Note 1_ | Verdien bør velges fra et kontrollert vokabular. 
 
