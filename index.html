@@ -540,9 +540,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#Blokk-obligatoriske-egenskaper">Obligatoriske egenskaper for <em>Blokk</em></a>
 <ul class="sectlevel3">
+<li><a href="#Blokk-dato-sist-oppdatert">Blokk - dato sist oppdatert (dct:modified)</a></li>
 <li><a href="#Blokk-hovedspråk">Blokk - hovedspråk (dct:language)</a></li>
 <li><a href="#Blokk-identifikator">Blokk - identifikator (dct:identifier)</a></li>
 <li><a href="#Blokk-tema">Blokk - tema (dcat:theme)</a></li>
+<li><a href="#Blokk-utgivelsesdato">Blokk - utgivelsesdato (dct:issued)</a></li>
 <li><a href="#Blokk-utgiver">Blokk - utgiver (dct:publisher)</a></li>
 </ul>
 </li>
@@ -551,6 +553,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Blokk-beskrivelse">Blokk – beskrivelse (dct:description)</a></li>
 <li><a href="#Blokk-dekningsområde">Blokk - dekningsområde (dct:spatial)</a></li>
 <li><a href="#Blokk-distribusjon">Blokk - distribusjon (dcat:distribution)</a></li>
+<li><a href="#Blokk-målgruppe">Blokk - målgruppe (dct:audience)</a></li>
 <li><a href="#Blokk-tittel">Blokk - tittel (dct:title)</a></li>
 <li><a href="#Blokk-type-informasjon">Blokk - type informasjon (cdvno:typeInfo)</a></li>
 </ul>
@@ -558,7 +561,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Blokk-valgfrie-egenskaper">Valgfrie egenskaper for <em>Blokk</em></a>
 <ul class="sectlevel3">
 <li><a href="#Blokk-brukerbehov">Blokk - brukerbehov (cdvno:userNeed)</a></li>
-<li><a href="#Blokk-dato-sist-oppdatert">Blokk - dato sist oppdatert (dct:modified)</a></li>
 <li><a href="#Blokk-følger">Blokk - følger (cpsv:follows)</a></li>
 <li><a href="#Blokk-gyldighetsperiode">Blokk - gyldighetsperiode (cv:validityPeriod)</a></li>
 <li><a href="#Blokk-har-relatert-regelverk">Blokk - har relatert regelverk (cv:hasLegalResource)</a></li>
@@ -568,7 +570,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Blokk-oppdateringsfrekvens">Blokk - oppdateringsfrekvens (dct:accrualPeriodicity) </a></li>
 <li><a href="#Blokk-creator">Blokk - produsent (dct:creator)</a></li>
 <li><a href="#Blokk-undertema">Blokk - undertema (cdvno:subTheme)</a></li>
-<li><a href="#Blokk-utgivelsesdato">Blokk - utgivelsesdato (dct:issued)</a></li>
 </ul>
 </li>
 </ul>
@@ -747,7 +748,7 @@ Vennligst meld dine tilbakemeldinger inn som <a href="https://github.com/Informa
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>under utvikling</mark><br>
-<strong>Sist oppdatert</strong>: 2023-09-14</p>
+<strong>Sist oppdatert</strong>: 2023-09-21</p>
 </div>
 </div>
 </div>
@@ -1097,6 +1098,57 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="sect2">
 <h3 id="Blokk-obligatoriske-egenskaper"><a class="anchor" href="#Blokk-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for <em>Blokk</em></h3>
 <div class="sect3">
+<h4 id="Blokk-dato-sist-oppdatert"><a class="anchor" href="#Blokk-dato-sist-oppdatert"></a>Blokk - dato sist oppdatert (dct:modified)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>date modified</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:modified</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi datoen når blokkens innhold sist ble oppdatert.</p>
+<p class="tableblock"><em>This property is used to specify the date when the content of the block was last time modified.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivået er endret fra valgfri til obligatorisk og multiplisitet endret fra 0..1 til 1..1.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: The requirement level is changed from optional to mandatory, and the multiplicity from 0..1 to 1..1.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aBlock&gt; a cdvno:Block; # blokk
+   dct:modified "2023-05-10"^^xsd:date; # dato sist oppdatert
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="Blokk-hovedspråk"><a class="anchor" href="#Blokk-hovedspråk"></a>Blokk - hovedspråk (dct:language)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1250,6 +1302,57 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="content">
 <pre>&lt;aBlock&gt; a cdvno:Block; # blokk
    dcat:theme &lt;https://psi.norge.no/los/tema/avlastning-og-stotte&gt;; # Los, avlastning og støtte
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Blokk-utgivelsesdato"><a class="anchor" href="#Blokk-utgivelsesdato"></a>Blokk - utgivelsesdato (dct:issued)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>issued</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:issued</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi datoen for formell utgivelse/publisering av blokken.</p>
+<p class="tableblock"><em>This property is used to specify the date for the formal issuing/publication of the block.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Kravnivået er endret fra valgfri til obligatorisk og multiplisitet endret fra 0..1 til 1..1.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: The requirement level is changed from optional to mandatory, and the multiplicity from 0..1 to 1..1.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aBlock&gt; a cdvno:Block; # blokk
+   dct:issued "2023-05-01"^^xsd:date; # utgivelsesdato
    .</pre>
 </div>
 </div>
@@ -1492,6 +1595,62 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 <div class="sect3">
+<h4 id="Blokk-målgruppe"><a class="anchor" href="#Blokk-målgruppe"></a>Blokk - målgruppe (dct:audience)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>audience</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:audience</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi målgruppe som blokkens innhold er ment for, dvs. typiske lesere.</p>
+<p class="tableblock"><em>This property is used to specify the audience that the content of the block is meant for, i.e., typical readers.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra et kontrollert vokabular.</p>
+<p class="tableblock"><em>The value should be chosen from a controlled vocabulary.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne spesifisere målgruppen som blokkens innhold er primært ment for.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify the audience that the content of the block is primarily meant for.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aBlock&gt; a cdvno:Block; # blokk
+   dct:audience &lt;&gt;; # målgruppe
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="Blokk-tittel"><a class="anchor" href="#Blokk-tittel"></a>Blokk - tittel (dct:title)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1667,52 +1826,6 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="content">
 <pre>&lt;aBlock&gt; a cdvno:Block; # blokk
    cdvno:userNeed &lt;http://data.europa.eu/ox8/life-event/BSC&gt;; # Life event "becoming a (social) caretaker"
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Blokk-dato-sist-oppdatert"><a class="anchor" href="#Blokk-dato-sist-oppdatert"></a>Blokk - dato sist oppdatert (dct:modified)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>date modified</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:modified</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi datoen når blokkens innhold sist ble oppdatert.</p>
-<p class="tableblock"><em>This property is used to specify the date when the content of the block was last time modified.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aBlock&gt; a cdvno:Block; # blokk
-   dct:modified "2023-05-10"^^xsd:date; # dato sist oppdatert
    .</pre>
 </div>
 </div>
@@ -2200,52 +2313,6 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="content">
 <pre>&lt;aBlock&gt; a cdvno:Block; # blokk
    cdvno:subTheme &lt;https://w3id.org/demo-resources/demo-classifications#demo-category-A1&gt;; # subtema
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Blokk-utgivelsesdato"><a class="anchor" href="#Blokk-utgivelsesdato"></a>Blokk - utgivelsesdato (dct:issued)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>issued</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:issued</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi datoen for formell utgivelse/publisering av blokken.</p>
-<p class="tableblock"><em>This property is used to specify the date for the formal issuing/publication of the block.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aBlock&gt; a cdvno:Block; # blokk
-   dct:issued "2023-05-01"^^xsd:date; # utgivelsesdato
    .</pre>
 </div>
 </div>
@@ -5092,7 +5159,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-09-14 11:55:17 UTC
+Sist oppdatert 2023-09-21 14:09:11 UTC
 </div>
 </div>
 </body>
