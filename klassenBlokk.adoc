@@ -377,7 +377,7 @@ Eksempel i RDF Turtle:
    .
 -----
 
-==== Blokk - følger (cpsv:follows) [[Blokk-følger]]  
+==== Blokk - følger regel (cpsv:follows) [[Blokk-følger-regel]]  
 
 [cols="30s,70d"]
 |===

@@ -9,13 +9,17 @@ Formålet med spesifikasjonen er å legge til rette for en felles måte å beskr
 
 Spesifikasjonen er anbefalt brukt til å beskrive innhold som er publisert eller ment å publiseres på nett, samt å utveksle/tilgjengeliggjøre beskrivelsene. Spesifikasjonen er basert på https://data.norge.no/specification/dcat-ap-no/["Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;", window="_blank", role="ext-link"], med utvidelser for å dekke behov identifisert gjennom utarbeidelsen av spesifikasjonen. 
 
-Spesifikasjonen inneholder også engelske navn (_English name_) og anvendelsesbeskrivelser (_Usage note_). Det gjøres oppmerksom på at engelske navn eller anvendelsesbeskrivelser ikke alle er ordrette sitater fra originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
+<<del1>> er formulert uavhengig av hvordan de implementeres. 
 
-Ettersom spesifikasjonen er basert på https://www.w3.org/RDF/[RDF &#x29C9;, window="_blank", role="ext-link"], vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i https://www.w3.org/TR/turtle/[RDF Turtle &#x29C9;, window="_blank", role="ext-link"]. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
+<<del2>> spesifiserer hvordan kravene beskrevet under <<del1>> skal implementeres i henhold til  https://www.w3.org/RDF/[Resource Description Framework (RDF) &#x29C9;, window="_blank", role="ext-link"]. Beskrivelsene utformet i henhold til spesifikasjonen vil dermed også være RDF-baserte og maskinprosesserbare. 
+
+<<del2>> inneholder også engelske navn (_English name_) og anvendelsesbeskrivelser (_Usage note_). Det gjøres oppmerksom på at engelske navn eller anvendelsesbeskrivelser ikke alle er ordrette sitater fra originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
 
 === Målgrupper [[Målgrupper]]
 
-Spesifikasjonen er primært for deg som skal utvikle/tilpasse verktøystøtte (f.eks. CMS) for innholdsbeskrivelser. Spesifikasjonen kan sekundært brukes av deg som skal beskrive/«tagge» innhold og som ønsker f.eks. å forstå hvorfor verktøystøtte krever slik den gjør.  
+<<del1>> er ment for deg som skal beskrive («tagge») innhold på nett, uavhengig av teknisk bakgrunn.
+
+<<del2>> er primært for deg som skal utvikle/tilpasse verktøystøtte (f.eks. CMS) for innholdsbeskrivelse. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i https://www.w3.org/TR/turtle/[RDF Turtle &#x29C9;, window="_blank", role="ext-link"]. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
 
 Spesifikasjonen er ikke for deg som er leser av det publiserte innholdet som skal beskrives. 
 
@@ -29,8 +33,8 @@ Utarbeidelse av nye versjoner av spesifikasjonen initieres av Digdir. Mindre end
 
 === Om kravnivåene i spesifikasjonen [[Om-kravnivåene]]
 
-Spesifikasjonen bruker ordene «obligatorisk/skal» (_"mandatory/shall"_), «anbefalt/bør» (_"recommended/should"_) og «valgfri/kan» (_"optional/may"_). Disse er https://data.norge.no/specification/dcat-ap-no/#Om-kravene[forklart i DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], og forklaringene gjentas ikke her.
+Spesifikasjonen bruker ordene «obligatorisk/skal» (_"mandatory/shall"_), «anbefalt/bør» (_"recommended/should"_) og «valgfri/kan» (_"optional/may"_) som har følgende betydning:
 
-include::navnerom.adoc[]
-
-include::leserveiledning.adoc[]
+* *Obligatorisk/skal*: Du skal oppgi informasjonen.
+* *Anbefalt/bør*: Du bør oppgi informasjonen hvis den er tilgjengelig.
+* *Valgfri/kan*: Du kan oppgi informasjonen, men ikke påkrevd.

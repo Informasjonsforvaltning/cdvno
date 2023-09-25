@@ -519,27 +519,36 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Innhold</div>
 <ul class="sectlevel1">
-<li><a href="#Om-versjonen">Om denne versjonen</a></li>
-<li><a href="#Om-spesifikasjonen">Om denne spesifikasjonen</a>
+<li><a href="#Om-versjonen">1. Om denne versjonen</a></li>
+<li><a href="#Om-spesifikasjonen">2. Om denne spesifikasjonen</a>
 <ul class="sectlevel2">
-<li><a href="#Formål">Formål</a></li>
-<li><a href="#Omfang-avgrensning">Omfang og avgrensning</a></li>
-<li><a href="#Målgrupper">Målgrupper</a></li>
-<li><a href="#Forvaltningsregime">Forvaltningsregime</a></li>
-<li><a href="#Om-kravnivåene">Om kravnivåene i spesifikasjonen</a></li>
-<li><a href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a></li>
-<li><a href="#Leserveiledning">Leserveiledning</a></li>
+<li><a href="#Formål">2.1. Formål</a></li>
+<li><a href="#Omfang-avgrensning">2.2. Omfang og avgrensning</a></li>
+<li><a href="#Målgrupper">2.3. Målgrupper</a></li>
+<li><a href="#Forvaltningsregime">2.4. Forvaltningsregime</a></li>
+<li><a href="#Om-kravnivåene">2.5. Om kravnivåene i spesifikasjonen</a></li>
 </ul>
 </li>
-<li><a href="#Forenklet-modell">Forenklet metadatamodell</a>
+<li><a href="#del1">3. Krav til innholdsbeskrivelse</a>
 <ul class="sectlevel2">
-<li><a href="#eksempel">Et tenkt eksempel på anvendelse av denne spesifikasjonen</a></li>
+<li><a href="#_obligatoriske_metadata_i_en_innholdsbeskrivelse">3.1. Obligatoriske metadata i en innholdsbeskrivelse</a></li>
+<li><a href="#_anbefalte_metadata_i_en_innholdsbeskrivelse">3.2. Anbefalte metadata i en innholdsbeskrivelse</a></li>
+<li><a href="#_valgfrie_metadata_i_en_innholdsbeskrivelse">3.3. Valgfrie metadata i en innholdsbeskrivelse</a></li>
 </ul>
 </li>
-<li><a href="#Block">Klassen Blokk (cdvno:Block)</a>
+<li><a href="#del2">4. Krav til RDF-representasjon av innholdsbeskrivelse</a>
 <ul class="sectlevel2">
-<li><a href="#Blokk-obligatoriske-egenskaper">Obligatoriske egenskaper for <em>Blokk</em></a>
+<li><a href="#Navnerom">4.1. Navnerom som er brukt i spesifikasjonen</a></li>
+<li><a href="#Leserveiledning">4.2. Leserveiledning</a></li>
+<li><a href="#Forenklet-modell">4.3. Forenklet metadatamodell</a>
 <ul class="sectlevel3">
+<li><a href="#eksempel">4.3.1. Et tenkt eksempel på anvendelse av denne spesifikasjonen</a></li>
+</ul>
+</li>
+<li><a href="#Block">4.4. Klassen Blokk (cdvno:Block)</a>
+<ul class="sectlevel3">
+<li><a href="#Blokk-obligatoriske-egenskaper">4.4.1. Obligatoriske egenskaper for <em>Blokk</em></a>
+<ul class="sectlevel4">
 <li><a href="#Blokk-dato-sist-oppdatert">Blokk - dato sist oppdatert (dct:modified)</a></li>
 <li><a href="#Blokk-hovedspråk">Blokk - hovedspråk (dct:language)</a></li>
 <li><a href="#Blokk-identifikator">Blokk - identifikator (dct:identifier)</a></li>
@@ -548,8 +557,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Blokk-utgiver">Blokk - utgiver (dct:publisher)</a></li>
 </ul>
 </li>
-<li><a href="#Blokk-anbefalte-egenskaper">Anbefalte egenskaper for <em>Blokk</em></a>
-<ul class="sectlevel3">
+<li><a href="#Blokk-anbefalte-egenskaper">4.4.2. Anbefalte egenskaper for <em>Blokk</em></a>
+<ul class="sectlevel4">
 <li><a href="#Blokk-beskrivelse">Blokk – beskrivelse (dct:description)</a></li>
 <li><a href="#Blokk-dekningsområde">Blokk - dekningsområde (dct:spatial)</a></li>
 <li><a href="#Blokk-distribusjon">Blokk - distribusjon (dcat:distribution)</a></li>
@@ -558,10 +567,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Blokk-type-informasjon">Blokk - type informasjon (cdvno:typeInfo)</a></li>
 </ul>
 </li>
-<li><a href="#Blokk-valgfrie-egenskaper">Valgfrie egenskaper for <em>Blokk</em></a>
-<ul class="sectlevel3">
+<li><a href="#Blokk-valgfrie-egenskaper">4.4.3. Valgfrie egenskaper for <em>Blokk</em></a>
+<ul class="sectlevel4">
 <li><a href="#Blokk-brukerbehov">Blokk - brukerbehov (cdvno:userNeed)</a></li>
-<li><a href="#Blokk-følger">Blokk - følger (cpsv:follows)</a></li>
+<li><a href="#Blokk-følger-regel">Blokk - følger regel (cpsv:follows)</a></li>
 <li><a href="#Blokk-gyldighetsperiode">Blokk - gyldighetsperiode (cv:validityPeriod)</a></li>
 <li><a href="#Blokk-har-relatert-regelverk">Blokk - har relatert regelverk (cv:hasLegalResource)</a></li>
 <li><a href="#Blokk-kilde">Blokk - kilde (dct:source)</a></li>
@@ -573,17 +582,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#DataService">Klassen Datatjeneste (API) (dcat:DataService)</a>
-<ul class="sectlevel2">
-<li><a href="#Datatjeneste-obligatoriske-egenskaper">Obligatoriske egenskaper for <em>Datatjeneste</em></a>
+<li><a href="#DataService">4.5. Klassen Datatjeneste (API) (dcat:DataService)</a>
 <ul class="sectlevel3">
+<li><a href="#Datatjeneste-obligatoriske-egenskaper">4.5.1. Obligatoriske egenskaper for <em>Datatjeneste</em></a>
+<ul class="sectlevel4">
 <li><a href="#Datatjeneste-endepunktsurl">Datatjeneste - endepunktsURL (dcat:endpointURL)</a></li>
 <li><a href="#Datatjeneste-identifikator">Datatjeneste - identifikator (dct:identifier)</a></li>
 <li><a href="#Datatjeneste-tittel">Datatjeneste - tittel (dct:title)</a></li>
 </ul>
 </li>
-<li><a href="#Datatjeneste-anbefalte-egenskaper">Anbefalte egenskaper for <em>Datatjeneste</em></a>
-<ul class="sectlevel3">
+<li><a href="#Datatjeneste-anbefalte-egenskaper">4.5.2. Anbefalte egenskaper for <em>Datatjeneste</em></a>
+<ul class="sectlevel4">
 <li><a href="#Datatjeneste-emneord">Datatjeneste - emneord (dcat:keyword)</a></li>
 <li><a href="#Datatjeneste-endepunktsbeskrivelse">Datatjeneste - endepunktsbeskrivelse (dcat:endpointDescription)</a></li>
 <li><a href="#Datatjeneste-format">Datatjeneste - format (dct:format)</a></li>
@@ -593,8 +602,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datatjeneste-utgiver">Datatjeneste - utgiver (dct:publisher)</a></li>
 </ul>
 </li>
-<li><a href="#Datatjeneste-valgfrie-egenskaper">Valgfrie egenskaper for <em>Datatjeneste</em></a>
-<ul class="sectlevel3">
+<li><a href="#Datatjeneste-valgfrie-egenskaper">4.5.3. Valgfrie egenskaper for <em>Datatjeneste</em></a>
+<ul class="sectlevel4">
 <li><a href="#Datatjeneste-beskrivelse">Datatjeneste - beskrivelse (dct:description)</a></li>
 <li><a href="#Datatjeneste-dokumentasjon">Datatjeneste - dokumentasjon (foaf:page)</a></li>
 <li><a href="#Datatjeneste-i-samsvar-med">Datatjeneste - i samsvar med (dct:conformsTo)</a></li>
@@ -606,15 +615,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Distribution">Klassen Distribusjon (dcat:Distribution)</a>
-<ul class="sectlevel2">
-<li><a href="#Distribusjon-obligatoriske-egenskaper">Obligatoriske egenskaper for <em>Distribusjon</em></a>
+<li><a href="#Distribution">4.6. Klassen Distribusjon (dcat:Distribution)</a>
 <ul class="sectlevel3">
+<li><a href="#Distribusjon-obligatoriske-egenskaper">4.6.1. Obligatoriske egenskaper for <em>Distribusjon</em></a>
+<ul class="sectlevel4">
 <li><a href="#Distribusjon-tilgangsURL">Distribusjon - tilgangsURL (dcat:accessURL)</a></li>
 </ul>
 </li>
-<li><a href="#Distribusjon-anbefalte-egenskaper">Anbefalte egenskaper for <em>Distribusjon</em></a>
-<ul class="sectlevel3">
+<li><a href="#Distribusjon-anbefalte-egenskaper">4.6.2. Anbefalte egenskaper for <em>Distribusjon</em></a>
+<ul class="sectlevel4">
 <li><a href="#Distribusjon-beskrivelse">Distribusjon - beskrivelse (dct:description)</a></li>
 <li><a href="#Distribusjon-format">Distribusjon - format (dct:format)</a></li>
 <li><a href="#Distribusjon-lisens">Distribusjon - lisens (dct:license)</a></li>
@@ -622,8 +631,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Distribusjon-tilgjengelighet">Distribusjon - tilgjengelighet (dcatap:availability)</a></li>
 </ul>
 </li>
-<li><a href="#Distribusjon-valgfrie-egenskaper">Valgfrie egenskaper for <em>Distribusjon</em></a>
-<ul class="sectlevel3">
+<li><a href="#Distribusjon-valgfrie-egenskaper">4.6.3. Valgfrie egenskaper for <em>Distribusjon</em></a>
+<ul class="sectlevel4">
 <li><a href="#Distribusjon-dokumentasjon">Distribusjon - dokumentasjon (foaf:page)</a></li>
 <li><a href="#Distribusjon-endringsdato">Distribusjon - endringsdato (dct:modified)</a></li>
 <li><a href="#Distribusjon-komprimeringsformat">Distribusjon - komprimeringsformat (dcat:compressFormat)</a></li>
@@ -639,52 +648,52 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Organization">Klassen Organisasjon (org:Organization)</a>
-<ul class="sectlevel2">
-<li><a href="#Organisasjon-obligatoriske-egenskaper">Obligatoriske egenskaper for <em>Organisasjon</em></a>
+<li><a href="#Organization">4.7. Klassen Organisasjon (org:Organization)</a>
 <ul class="sectlevel3">
+<li><a href="#Organisasjon-obligatoriske-egenskaper">4.7.1. Obligatoriske egenskaper for <em>Organisasjon</em></a>
+<ul class="sectlevel4">
 <li><a href="#Organisasjon-identifikator">Organisasjon – identifikator (dct:identifier)</a></li>
 <li><a href="#Organisasjon-tittel">Organisasjon – navn (dct:title)</a></li>
 </ul>
 </li>
-<li><a href="#Organisasjon-anbefalte-egenskaper">Anbefalte egenskaper for <em>Organisasjon</em></a>
-<ul class="sectlevel3">
+<li><a href="#Organisasjon-anbefalte-egenskaper">4.7.2. Anbefalte egenskaper for <em>Organisasjon</em></a>
+<ul class="sectlevel4">
 <li><a href="#Organisasjon-type">Organisasjon – type (dct:type)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#Regel">Klassen Regel (cpsv:Rule)</a>
-<ul class="sectlevel2">
-<li><a href="#Regel-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Regel</em></a>
+<li><a href="#Regel">4.8. Klassen Regel (cpsv:Rule)</a>
 <ul class="sectlevel3">
+<li><a href="#Regel-obligatoriske-egenskaper">4.8.1. Obligatoriske egenskaper for klassen <em>Regel</em></a>
+<ul class="sectlevel4">
 <li><a href="#Regel-beskrivelse">Regel - beskrivelse (dct:description)</a></li>
 <li><a href="#Regel-identifikator">Regel - identifikator (dct:identifier)</a></li>
 <li><a href="#Regel-navn">Regel - navn (dct:title)</a></li>
 </ul>
 </li>
-<li><a href="#Regel-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Regel</em></a>
-<ul class="sectlevel3">
+<li><a href="#Regel-anbefalte-egenskaper">4.8.2. Anbefalte egenskaper for klassen <em>Regel</em></a>
+<ul class="sectlevel4">
 <li><a href="#Regel-implementerer">Regel - implementerer (cpsv:implements)</a></li>
 <li><a href="#Regel-språk">Regel - språk (dct:language)</a></li>
 </ul>
 </li>
-<li><a href="#Regel-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Regel</em></a>
-<ul class="sectlevel3">
+<li><a href="#Regel-valgfrie-egenskaper">4.8.3. Valgfrie egenskaper for klassen <em>Regel</em></a>
+<ul class="sectlevel4">
 <li><a href="#Regel-type">Regel - type (dct:type)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#RegulativRessurs">Klassen Regulativ ressurs (eli:LegalResource)</a>
-<ul class="sectlevel2">
-<li><a href="#RegulativRessurs-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Regulativ ressurs</em></a>
+<li><a href="#RegulativRessurs">4.9. Klassen Regulativ ressurs (eli:LegalResource)</a>
 <ul class="sectlevel3">
+<li><a href="#RegulativRessurs-obligatoriske-egenskaper">4.9.1. Obligatoriske egenskaper for klassen <em>Regulativ ressurs</em></a>
+<ul class="sectlevel4">
 <li><a href="#RegulativRessurs-type">Regulativ ressurs - type (dct:type)</a></li>
 </ul>
 </li>
-<li><a href="#RegulativRessurs-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Regulativ ressurs</em></a>
-<ul class="sectlevel3">
+<li><a href="#RegulativRessurs-anbefalte-egenskaper">4.9.2. Anbefalte egenskaper for klassen <em>Regulativ ressurs</em></a>
+<ul class="sectlevel4">
 <li><a href="#RegulativRessurs-beskrivelse">Regulativ ressurs - beskrivelse (dct:description)</a></li>
 <li><a href="#RegulativRessurs-identifikator">Regulativ ressurs - identifikator (dct:identifier)</a></li>
 <li><a href="#RegulativRessurs-referanse">Regulativ ressurs - referanse (rdfs:seeAlso)</a></li>
@@ -692,19 +701,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#RegulativRessurs-tittel">Regulativ ressurs - tittel (dct:title)</a></li>
 </ul>
 </li>
-<li><a href="#RegulativRessurs-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Regulativ ressurs</em></a>
-<ul class="sectlevel3">
+<li><a href="#RegulativRessurs-valgfrie-egenskaper">4.9.3. Valgfrie egenskaper for klassen <em>Regulativ ressurs</em></a>
+<ul class="sectlevel4">
 <li><a href="#RegulativRessurs-relatertRegulativRessurs">Regulativ ressurs - relatert regulativ ressurs (dct:relation)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#Ressurs">Klassen Ressurs (dcat:Resource)</a>
-<ul class="sectlevel2">
-<li><a href="#Ressurs-anbefalte-egenskaper">Anbefalte egenskaper for <em>Ressurs</em></a>
+<li><a href="#Ressurs">4.10. Klassen Ressurs (dcat:Resource)</a>
 <ul class="sectlevel3">
+<li><a href="#Ressurs-anbefalte-egenskaper">4.10.1. Anbefalte egenskaper for <em>Ressurs</em></a>
+<ul class="sectlevel4">
 <li><a href="#Ressurs-identifikator">Ressurs - identifikator (dct:identifier)</a></li>
 <li><a href="#Ressurs-tittel">Ressurs - tittel (dct:title)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -747,12 +758,12 @@ Vennligst meld dine tilbakemeldinger inn som <a href="https://github.com/Informa
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>under utvikling</mark><br>
-<strong>Sist oppdatert</strong>: 2023-09-21</p>
+<strong>Sist oppdatert</strong>: 2023-09-25</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Om-versjonen"><a class="anchor" href="#Om-versjonen"></a>Om denne versjonen</h2>
+<h2 id="Om-versjonen"><a class="anchor" href="#Om-versjonen"></a>1. Om denne versjonen</h2>
 <div class="sectionbody">
 <table class="tableblock frame-none grid-nome stripes-even stretch">
 <colgroup>
@@ -771,37 +782,43 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Om-spesifikasjonen"><a class="anchor" href="#Om-spesifikasjonen"></a>Om denne spesifikasjonen</h2>
+<h2 id="Om-spesifikasjonen"><a class="anchor" href="#Om-spesifikasjonen"></a>2. Om denne spesifikasjonen</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="Formål"><a class="anchor" href="#Formål"></a>Formål</h3>
+<h3 id="Formål"><a class="anchor" href="#Formål"></a>2.1. Formål</h3>
 <div class="paragraph">
 <p>Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive («tagge») innhold på nett. Spesifikasjonen skal bidra til interoperabilitet av innholdsbeskrivelser på tvers av sektorer og CMSer (<em>Content Management Systems</em>). Spesifikasjonen muliggjør også maskinell tilgjengeligliggjøring av beskrivelsene.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Omfang-avgrensning"><a class="anchor" href="#Omfang-avgrensning"></a>Omfang og avgrensning</h3>
+<h3 id="Omfang-avgrensning"><a class="anchor" href="#Omfang-avgrensning"></a>2.2. Omfang og avgrensning</h3>
 <div class="paragraph">
 <p>Spesifikasjonen er anbefalt brukt til å beskrive innhold som er publisert eller ment å publiseres på nett, samt å utveksle/tilgjengeliggjøre beskrivelsene. Spesifikasjonen er basert på <a href="https://data.norge.no/specification/dcat-ap-no/" class="ext-link" target="_blank" rel="noopener">Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;</a>, med utvidelser for å dekke behov identifisert gjennom utarbeidelsen av spesifikasjonen.</p>
 </div>
 <div class="paragraph">
-<p>Spesifikasjonen inneholder også engelske navn (<em>English name</em>) og anvendelsesbeskrivelser (<em>Usage note</em>). Det gjøres oppmerksom på at engelske navn eller anvendelsesbeskrivelser ikke alle er ordrette sitater fra originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).</p>
+<p><a href="#del1">Kapittel 3</a> er formulert uavhengig av hvordan de implementeres.</p>
 </div>
 <div class="paragraph">
-<p>Ettersom spesifikasjonen er basert på <a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">RDF &#x29C9;</a>, vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinprosesserbare. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i <a href="https://www.w3.org/TR/turtle/" class="ext-link" target="_blank" rel="noopener">RDF Turtle &#x29C9;</a>. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.</p>
+<p><a href="#del2">Kapittel 4</a> spesifiserer hvordan kravene beskrevet under <a href="#del1">Kapittel 3</a> skal implementeres i henhold til  <a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">Resource Description Framework (RDF) &#x29C9;</a>. Beskrivelsene utformet i henhold til spesifikasjonen vil dermed også være RDF-baserte og maskinprosesserbare.</p>
+</div>
+<div class="paragraph">
+<p><a href="#del2">Kapittel 4</a> inneholder også engelske navn (<em>English name</em>) og anvendelsesbeskrivelser (<em>Usage note</em>). Det gjøres oppmerksom på at engelske navn eller anvendelsesbeskrivelser ikke alle er ordrette sitater fra originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Målgrupper"><a class="anchor" href="#Målgrupper"></a>Målgrupper</h3>
+<h3 id="Målgrupper"><a class="anchor" href="#Målgrupper"></a>2.3. Målgrupper</h3>
 <div class="paragraph">
-<p>Spesifikasjonen er primært for deg som skal utvikle/tilpasse verktøystøtte (f.eks. CMS) for innholdsbeskrivelser. Spesifikasjonen kan sekundært brukes av deg som skal beskrive/«tagge» innhold og som ønsker f.eks. å forstå hvorfor verktøystøtte krever slik den gjør.</p>
+<p><a href="#del1">Kapittel 3</a> er ment for deg som skal beskrive («tagge») innhold på nett, uavhengig av teknisk bakgrunn.</p>
+</div>
+<div class="paragraph">
+<p><a href="#del2">Kapittel 4</a> er primært for deg som skal utvikle/tilpasse verktøystøtte (f.eks. CMS) for innholdsbeskrivelse. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i <a href="https://www.w3.org/TR/turtle/" class="ext-link" target="_blank" rel="noopener">RDF Turtle &#x29C9;</a>. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.</p>
 </div>
 <div class="paragraph">
 <p>Spesifikasjonen er ikke for deg som er leser av det publiserte innholdet som skal beskrives.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Forvaltningsregime"><a class="anchor" href="#Forvaltningsregime"></a>Forvaltningsregime</h3>
+<h3 id="Forvaltningsregime"><a class="anchor" href="#Forvaltningsregime"></a>2.4. Forvaltningsregime</h3>
 <div class="paragraph">
 <p><mark><em>gjelder ikke ennå, siden denne versjonen kun er et forslag i et tidlig hypotese-stadium.</em></mark></p>
 </div>
@@ -813,13 +830,69 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Om-kravnivåene"><a class="anchor" href="#Om-kravnivåene"></a>Om kravnivåene i spesifikasjonen</h3>
+<h3 id="Om-kravnivåene"><a class="anchor" href="#Om-kravnivåene"></a>2.5. Om kravnivåene i spesifikasjonen</h3>
 <div class="paragraph">
-<p>Spesifikasjonen bruker ordene «obligatorisk/skal» (<em>"mandatory/shall"</em>), «anbefalt/bør» (<em>"recommended/should"</em>) og «valgfri/kan» (<em>"optional/may"</em>). Disse er <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene" class="ext-link" target="_blank" rel="noopener">forklart i DCAT-AP-NO &#x29C9;</a>, og forklaringene gjentas ikke her.</p>
+<p>Spesifikasjonen bruker ordene «obligatorisk/skal» (<em>"mandatory/shall"</em>), «anbefalt/bør» (<em>"recommended/should"</em>) og «valgfri/kan» (<em>"optional/may"</em>) som har følgende betydning:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Obligatorisk/skal</strong>: Du skal oppgi informasjonen.</p>
+</li>
+<li>
+<p><strong>Anbefalt/bør</strong>: Du bør oppgi informasjonen hvis den er tilgjengelig.</p>
+</li>
+<li>
+<p><strong>Valgfri/kan</strong>: Du kan oppgi informasjonen, men ikke påkrevd.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="del1"><a class="anchor" href="#del1"></a>3. Krav til innholdsbeskrivelse</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spesifikasjonen tar utgangspunkt i at det er en «blokk» som skal beskrives («tagges») med metadata. I konteksten av denne spesifikasjonen betyr <strong>blokk</strong> innhold på en nettside. Det kan være en hel artikkel, eller deler av artikkelen, f.eks. et avsnitt. Innholdsprodusentene definerer selv hva som er å anse som en blokk i hvert enkelt tilfelle. Metadataene er ment å kun dekke <em>tverrgående behov</em>. Dvs. at metadataene ikke er en uttømmende liste, men representerer et minimumsgrunnlag som kan bygges videre på innad i sektorene.</p>
+</div>
+<div class="paragraph">
+<p>Dette kapittelet spesifiserer hvilke metadatafelter skal/bør/kan tas med når en blokk beskrives, uavhengig av hvordan kravene implementeres.</p>
+</div>
+<div class="paragraph">
+<p>Kapittelet stiller også krav til bruk av kontrollerte vokabularer. I motsetning til fritekst, inneholder et <strong>kontrollert vokabular</strong> et forhåndsdefinert sett verdier som skal/bør/kan brukes til å fylle et metadatafelt.  Merk at foreslåtte kontrollerte vokabularer er ment å fungere som et utgangspunkt som skal utvides til å dekke nye behov eller utbroderes med sektorspesifikke vokabularer der disse finnes. <mark>Der det ikke er foreslått noen vokabularer er vi interessert i tilbakemelding på om de ulike sektorene har egne vokabularer som kan brukes, eller om det er grunnlag for å utvikle et felles vokabular.</mark></p>
+</div>
+<div class="paragraph">
+<p>Tabellene i kapittelet er sortert etter feltnavn.</p>
+</div>
+<div class="sect2">
+<h3 id="_obligatoriske_metadata_i_en_innholdsbeskrivelse"><a class="anchor" href="#_obligatoriske_metadata_i_en_innholdsbeskrivelse"></a>3.1. Obligatoriske metadata i en innholdsbeskrivelse</h3>
+<div class="paragraph">
+<p><mark><em>mer tekst kommer</em></mark></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Navnerom"><a class="anchor" href="#Navnerom"></a>Navnerom som er brukt i spesifikasjonen</h3>
+<h3 id="_anbefalte_metadata_i_en_innholdsbeskrivelse"><a class="anchor" href="#_anbefalte_metadata_i_en_innholdsbeskrivelse"></a>3.2. Anbefalte metadata i en innholdsbeskrivelse</h3>
+<div class="paragraph">
+<p><mark><em>mer tekst kommer</em></mark></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_valgfrie_metadata_i_en_innholdsbeskrivelse"><a class="anchor" href="#_valgfrie_metadata_i_en_innholdsbeskrivelse"></a>3.3. Valgfrie metadata i en innholdsbeskrivelse</h3>
+<div class="paragraph">
+<p><mark><em>mer tekst kommer</em></mark></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="del2"><a class="anchor" href="#del2"></a>4. Krav til RDF-representasjon av innholdsbeskrivelse</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Kapittelet spesifiserer hvordan kravene beskrevet under <a href="#del1">Kapittel 3</a> implementeres i henhold til RDF.</p>
+</div>
+<div class="sect2">
+<h3 id="Navnerom"><a class="anchor" href="#Navnerom"></a>4.1. Navnerom som er brukt i spesifikasjonen</h3>
 <div class="paragraph">
 <p>Navnerom for denne spesifikasjonen er <code>https://informasjonsforvaltning.github.io/cdvno#</code> (<mark>det skal være en offisiell URI etter ferdigstilling av spesifikasjonen, mest sannsynlig <code>https://data.norge.no/vocabulary/cdvno#</code></mark>)</p>
 </div>
@@ -920,7 +993,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Leserveiledning"><a class="anchor" href="#Leserveiledning"></a>Leserveiledning</h3>
+<h3 id="Leserveiledning"><a class="anchor" href="#Leserveiledning"></a>4.2. Leserveiledning</h3>
 <div class="paragraph">
 <p>Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.</p>
 </div>
@@ -942,7 +1015,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi en unik identifikator til klassen eller egenskapen.</p>
 <p class="tableblock">Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne spesifikasjonen.</p>
-<p class="tableblock">Eksempel: <code>skos:Concept</code> er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i <code>skos</code> (<a href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a> viser hva <code>skos</code> står for).</p></td>
+<p class="tableblock">Eksempel: <code>skos:Concept</code> er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i <code>skos</code> (<a href="#Navnerom">Section 4.1</a> viser hva <code>skos</code> står for).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
@@ -967,7 +1040,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#Om-kravnivåene">Om kravnivåene i spesifikasjonen</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#Om-kravnivåene">Section 2.5</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -981,11 +1054,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tbody>
 </table>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Forenklet-modell"><a class="anchor" href="#Forenklet-modell"></a>Forenklet metadatamodell</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="Forenklet-modell"><a class="anchor" href="#Forenklet-modell"></a>4.3. Forenklet metadatamodell</h3>
 <div id="img-cdvno" class="imageblock">
 <div class="content">
 <a class="image" href="images/cdvno-classes-only.png"><img src="images/cdvno-classes-only.png" alt="cdvno classes only"></a>
@@ -1021,8 +1091,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <div class="paragraph">
 <p>Bortsett fra klassen Datasett (<code>dcat:Dataset</code>) som er spesifisert i nevnte <a href="https://data.norge.no/specification/dcat-ap-no#Datasett" class="ext-link" target="_blank" rel="noopener">DCAT-AP-NO &#x29C9;</a>, og klassen Innhold (<code>rdfs:Resource</code>) som er <a href="https://www.w3.org/TR/rdf12-schema/#ch_resource" class="ext-link" target="_blank" rel="noopener">en generisk klasse for alt &#x29C9;</a>, er alle de andre klassene i figuren over, spesifisert nærmere i denne spesifikasjonen.</p>
 </div>
-<div class="sect2">
-<h3 id="eksempel"><a class="anchor" href="#eksempel"></a>Et tenkt eksempel på anvendelse av denne spesifikasjonen</h3>
+<div class="sect3">
+<h4 id="eksempel"><a class="anchor" href="#eksempel"></a>4.3.1. Et tenkt eksempel på anvendelse av denne spesifikasjonen</h4>
 <div class="paragraph">
 <p>Som et konkret demo-/test-eksempel, la oss si at vi ønsker å tagge <a href="https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak" class="ext-link" target="_blank" rel="noopener">"Klage på vedtak" &#x29C9;</a> under "Støtte og avlastning til pårørende med store omsorgsoppgaver" på helse.norge.no:</p>
 </div>
@@ -1038,10 +1108,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="Block"><a class="anchor" href="#Block"></a>Klassen Blokk (cdvno:Block)</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="Block"><a class="anchor" href="#Block"></a>4.4. Klassen Blokk (cdvno:Block)</h3>
 <div id="img-klassenBlokk" class="imageblock">
 <div class="content">
 <a class="image" href="images/cdvno-block.png"><img src="images/cdvno-block.png" alt="cdvno block"></a>
@@ -1094,10 +1162,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
    .</pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Blokk-obligatoriske-egenskaper"><a class="anchor" href="#Blokk-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for <em>Blokk</em></h3>
 <div class="sect3">
-<h4 id="Blokk-dato-sist-oppdatert"><a class="anchor" href="#Blokk-dato-sist-oppdatert"></a>Blokk - dato sist oppdatert (dct:modified)</h4>
+<h4 id="Blokk-obligatoriske-egenskaper"><a class="anchor" href="#Blokk-obligatoriske-egenskaper"></a>4.4.1. Obligatoriske egenskaper for <em>Blokk</em></h4>
+<div class="sect4">
+<h5 id="Blokk-dato-sist-oppdatert"><a class="anchor" href="#Blokk-dato-sist-oppdatert"></a>4.4.1.1. Blokk - dato sist oppdatert (dct:modified)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1147,8 +1215,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-hovedspråk"><a class="anchor" href="#Blokk-hovedspråk"></a>Blokk - hovedspråk (dct:language)</h4>
+<div class="sect4">
+<h5 id="Blokk-hovedspråk"><a class="anchor" href="#Blokk-hovedspråk"></a>4.4.1.2. Blokk - hovedspråk (dct:language)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1203,8 +1271,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-identifikator"><a class="anchor" href="#Blokk-identifikator"></a>Blokk - identifikator (dct:identifier)</h4>
+<div class="sect4">
+<h5 id="Blokk-identifikator"><a class="anchor" href="#Blokk-identifikator"></a>4.4.1.3. Blokk - identifikator (dct:identifier)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1254,8 +1322,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-tema"><a class="anchor" href="#Blokk-tema"></a>Blokk - tema (dcat:theme)</h4>
+<div class="sect4">
+<h5 id="Blokk-tema"><a class="anchor" href="#Blokk-tema"></a>4.4.1.4. Blokk - tema (dcat:theme)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1305,8 +1373,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-utgivelsesdato"><a class="anchor" href="#Blokk-utgivelsesdato"></a>Blokk - utgivelsesdato (dct:issued)</h4>
+<div class="sect4">
+<h5 id="Blokk-utgivelsesdato"><a class="anchor" href="#Blokk-utgivelsesdato"></a>4.4.1.5. Blokk - utgivelsesdato (dct:issued)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1356,8 +1424,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-utgiver"><a class="anchor" href="#Blokk-utgiver"></a>Blokk - utgiver (dct:publisher)</h4>
+<div class="sect4">
+<h5 id="Blokk-utgiver"><a class="anchor" href="#Blokk-utgiver"></a>4.4.1.6. Blokk - utgiver (dct:publisher)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1408,10 +1476,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Blokk-anbefalte-egenskaper"><a class="anchor" href="#Blokk-anbefalte-egenskaper"></a>Anbefalte egenskaper for <em>Blokk</em></h3>
 <div class="sect3">
-<h4 id="Blokk-beskrivelse"><a class="anchor" href="#Blokk-beskrivelse"></a>Blokk – beskrivelse (dct:description)</h4>
+<h4 id="Blokk-anbefalte-egenskaper"><a class="anchor" href="#Blokk-anbefalte-egenskaper"></a>4.4.2. Anbefalte egenskaper for <em>Blokk</em></h4>
+<div class="sect4">
+<h5 id="Blokk-beskrivelse"><a class="anchor" href="#Blokk-beskrivelse"></a>4.4.2.1. Blokk – beskrivelse (dct:description)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1466,8 +1534,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-dekningsområde"><a class="anchor" href="#Blokk-dekningsområde"></a>Blokk - dekningsområde (dct:spatial)</h4>
+<div class="sect4">
+<h5 id="Blokk-dekningsområde"><a class="anchor" href="#Blokk-dekningsområde"></a>4.4.2.2. Blokk - dekningsområde (dct:spatial)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1547,8 +1615,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-distribusjon"><a class="anchor" href="#Blokk-distribusjon"></a>Blokk - distribusjon (dcat:distribution)</h4>
+<div class="sect4">
+<h5 id="Blokk-distribusjon"><a class="anchor" href="#Blokk-distribusjon"></a>4.4.2.3. Blokk - distribusjon (dcat:distribution)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1593,8 +1661,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-målgruppe"><a class="anchor" href="#Blokk-målgruppe"></a>Blokk - målgruppe (dct:audience)</h4>
+<div class="sect4">
+<h5 id="Blokk-målgruppe"><a class="anchor" href="#Blokk-målgruppe"></a>4.4.2.4. Blokk - målgruppe (dct:audience)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1649,8 +1717,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-tittel"><a class="anchor" href="#Blokk-tittel"></a>Blokk - tittel (dct:title)</h4>
+<div class="sect4">
+<h5 id="Blokk-tittel"><a class="anchor" href="#Blokk-tittel"></a>4.4.2.5. Blokk - tittel (dct:title)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1705,8 +1773,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-type-informasjon"><a class="anchor" href="#Blokk-type-informasjon"></a>Blokk - type informasjon (cdvno:typeInfo)</h4>
+<div class="sect4">
+<h5 id="Blokk-type-informasjon"><a class="anchor" href="#Blokk-type-informasjon"></a>4.4.2.6. Blokk - type informasjon (cdvno:typeInfo)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1771,10 +1839,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Blokk-valgfrie-egenskaper"><a class="anchor" href="#Blokk-valgfrie-egenskaper"></a>Valgfrie egenskaper for <em>Blokk</em></h3>
 <div class="sect3">
-<h4 id="Blokk-brukerbehov"><a class="anchor" href="#Blokk-brukerbehov"></a>Blokk - brukerbehov (cdvno:userNeed)</h4>
+<h4 id="Blokk-valgfrie-egenskaper"><a class="anchor" href="#Blokk-valgfrie-egenskaper"></a>4.4.3. Valgfrie egenskaper for <em>Blokk</em></h4>
+<div class="sect4">
+<h5 id="Blokk-brukerbehov"><a class="anchor" href="#Blokk-brukerbehov"></a>4.4.3.1. Blokk - brukerbehov (cdvno:userNeed)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1829,8 +1897,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-følger"><a class="anchor" href="#Blokk-følger"></a>Blokk - følger (cpsv:follows)</h4>
+<div class="sect4">
+<h5 id="Blokk-følger-regel"><a class="anchor" href="#Blokk-følger-regel"></a>4.4.3.2. Blokk - følger regel (cpsv:follows)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1880,8 +1948,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-gyldighetsperiode"><a class="anchor" href="#Blokk-gyldighetsperiode"></a>Blokk - gyldighetsperiode (cv:validityPeriod)</h4>
+<div class="sect4">
+<h5 id="Blokk-gyldighetsperiode"><a class="anchor" href="#Blokk-gyldighetsperiode"></a>4.4.3.3. Blokk - gyldighetsperiode (cv:validityPeriod)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1931,8 +1999,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-har-relatert-regelverk"><a class="anchor" href="#Blokk-har-relatert-regelverk"></a>Blokk - har relatert regelverk (cv:hasLegalResource)</h4>
+<div class="sect4">
+<h5 id="Blokk-har-relatert-regelverk"><a class="anchor" href="#Blokk-har-relatert-regelverk"></a>4.4.3.4. Blokk - har relatert regelverk (cv:hasLegalResource)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1982,8 +2050,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-kilde"><a class="anchor" href="#Blokk-kilde"></a>Blokk - kilde (dct:source)</h4>
+<div class="sect4">
+<h5 id="Blokk-kilde"><a class="anchor" href="#Blokk-kilde"></a>4.4.3.5. Blokk - kilde (dct:source)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2033,8 +2101,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-omhandler"><a class="anchor" href="#Blokk-omhandler"></a>Blokk - omhandler (cdvno:subjectGroup)</h4>
+<div class="sect4">
+<h5 id="Blokk-omhandler"><a class="anchor" href="#Blokk-omhandler"></a>4.4.3.6. Blokk - omhandler (cdvno:subjectGroup)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2098,8 +2166,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-oppdateringsfrekvens"><a class="anchor" href="#Blokk-oppdateringsfrekvens"></a>Blokk - oppdateringsfrekvens (dct:accrualPeriodicity) </h4>
+<div class="sect4">
+<h5 id="Blokk-oppdateringsfrekvens"><a class="anchor" href="#Blokk-oppdateringsfrekvens"></a>4.4.3.7. Blokk - oppdateringsfrekvens (dct:accrualPeriodicity) </h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2149,8 +2217,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-creator"><a class="anchor" href="#Blokk-creator"></a>Blokk - produsent (dct:creator)</h4>
+<div class="sect4">
+<h5 id="Blokk-creator"><a class="anchor" href="#Blokk-creator"></a>4.4.3.8. Blokk - produsent (dct:creator)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2200,8 +2268,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Blokk-undertema"><a class="anchor" href="#Blokk-undertema"></a>Blokk - undertema (cdvno:subTheme)</h4>
+<div class="sect4">
+<h5 id="Blokk-undertema"><a class="anchor" href="#Blokk-undertema"></a>4.4.3.9. Blokk - undertema (cdvno:subTheme)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2244,8 +2312,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne oppgi tema som ikke er inkludert i de obligatoriske/anbefalte taksonomiene for egenskap <a href="#Blokk-tema">Blokk - tema (dcat:theme)</a>.</p>
-<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify theme that is not included in the mandatory/recommended taxonomies for the property <a href="#Blokk-tema">Blokk - tema (dcat:theme)</a></em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utvidelse sammenlignet med DCAT-AP-NO: Denne er ikke eksplisitt spesifisert i DCAT-AP-NO. Dette for å kunne oppgi tema som ikke er inkludert i de obligatoriske/anbefalte taksonomiene for egenskap <a href="#Blokk-tema">Section 4.4.1.4</a>.</p>
+<p class="tableblock"><em>Extension compared to DCAT-AP-NO: This property is not explicitly specified in DCAT-AP-NO. This is to be able to specify theme that is not included in the mandatory/recommended taxonomies for the property <a href="#Blokk-tema">Section 4.4.1.4</a></em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2262,10 +2330,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="DataService"><a class="anchor" href="#DataService"></a>Klassen Datatjeneste (API) (dcat:DataService)</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="DataService"><a class="anchor" href="#DataService"></a>4.5. Klassen Datatjeneste (API) (dcat:DataService)</h3>
 <div id="img-klassenDatatjeneste" class="imageblock">
 <div class="content">
 <a class="image" href="images/cdvno-dataservice.png"><img src="images/cdvno-dataservice.png" alt="cdvno dataservice"></a>
@@ -2314,10 +2380,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
    .</pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Datatjeneste-obligatoriske-egenskaper"><a class="anchor" href="#Datatjeneste-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for <em>Datatjeneste</em></h3>
 <div class="sect3">
-<h4 id="Datatjeneste-endepunktsurl"><a class="anchor" href="#Datatjeneste-endepunktsurl"></a>Datatjeneste - endepunktsURL (dcat:endpointURL)</h4>
+<h4 id="Datatjeneste-obligatoriske-egenskaper"><a class="anchor" href="#Datatjeneste-obligatoriske-egenskaper"></a>4.5.1. Obligatoriske egenskaper for <em>Datatjeneste</em></h4>
+<div class="sect4">
+<h5 id="Datatjeneste-endepunktsurl"><a class="anchor" href="#Datatjeneste-endepunktsurl"></a>4.5.1.1. Datatjeneste - endepunktsURL (dcat:endpointURL)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2362,8 +2428,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-identifikator"><a class="anchor" href="#Datatjeneste-identifikator"></a>Datatjeneste - identifikator (dct:identifier)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-identifikator"><a class="anchor" href="#Datatjeneste-identifikator"></a>4.5.1.2. Datatjeneste - identifikator (dct:identifier)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2413,8 +2479,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-tittel"><a class="anchor" href="#Datatjeneste-tittel"></a>Datatjeneste - tittel (dct:title)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-tittel"><a class="anchor" href="#Datatjeneste-tittel"></a>4.5.1.3. Datatjeneste - tittel (dct:title)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2460,10 +2526,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Datatjeneste-anbefalte-egenskaper"><a class="anchor" href="#Datatjeneste-anbefalte-egenskaper"></a>Anbefalte egenskaper for <em>Datatjeneste</em></h3>
 <div class="sect3">
-<h4 id="Datatjeneste-emneord"><a class="anchor" href="#Datatjeneste-emneord"></a>Datatjeneste - emneord (dcat:keyword)</h4>
+<h4 id="Datatjeneste-anbefalte-egenskaper"><a class="anchor" href="#Datatjeneste-anbefalte-egenskaper"></a>4.5.2. Anbefalte egenskaper for <em>Datatjeneste</em></h4>
+<div class="sect4">
+<h5 id="Datatjeneste-emneord"><a class="anchor" href="#Datatjeneste-emneord"></a>4.5.2.1. Datatjeneste - emneord (dcat:keyword)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2508,8 +2574,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-endepunktsbeskrivelse"><a class="anchor" href="#Datatjeneste-endepunktsbeskrivelse"></a>Datatjeneste - endepunktsbeskrivelse (dcat:endpointDescription)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-endepunktsbeskrivelse"><a class="anchor" href="#Datatjeneste-endepunktsbeskrivelse"></a>4.5.2.2. Datatjeneste - endepunktsbeskrivelse (dcat:endpointDescription)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2559,8 +2625,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-format"><a class="anchor" href="#Datatjeneste-format"></a>Datatjeneste - format (dct:format)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-format"><a class="anchor" href="#Datatjeneste-format"></a>4.5.2.3. Datatjeneste - format (dct:format)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2610,8 +2676,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-kontaktpunkt"><a class="anchor" href="#Datatjeneste-kontaktpunkt"></a>Datatjeneste - kontaktpunkt (dcat:contactPoint)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-kontaktpunkt"><a class="anchor" href="#Datatjeneste-kontaktpunkt"></a>4.5.2.4. Datatjeneste - kontaktpunkt (dcat:contactPoint)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2657,8 +2723,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-tema"><a class="anchor" href="#Datatjeneste-tema"></a>Datatjeneste - tema (dcat:theme)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-tema"><a class="anchor" href="#Datatjeneste-tema"></a>4.5.2.5. Datatjeneste - tema (dcat:theme)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2708,8 +2774,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-tilgjengeliggjør-datasett"><a class="anchor" href="#Datatjeneste-tilgjengeliggjør-datasett"></a>Datatjeneste - tilgjengeliggjør datasett (dcat:servesDataset)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-tilgjengeliggjør-datasett"><a class="anchor" href="#Datatjeneste-tilgjengeliggjør-datasett"></a>4.5.2.6. Datatjeneste - tilgjengeliggjør datasett (dcat:servesDataset)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2754,8 +2820,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-utgiver"><a class="anchor" href="#Datatjeneste-utgiver"></a>Datatjeneste - utgiver (dct:publisher)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-utgiver"><a class="anchor" href="#Datatjeneste-utgiver"></a>4.5.2.7. Datatjeneste - utgiver (dct:publisher)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2806,10 +2872,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Datatjeneste-valgfrie-egenskaper"><a class="anchor" href="#Datatjeneste-valgfrie-egenskaper"></a>Valgfrie egenskaper for <em>Datatjeneste</em></h3>
 <div class="sect3">
-<h4 id="Datatjeneste-beskrivelse"><a class="anchor" href="#Datatjeneste-beskrivelse"></a>Datatjeneste - beskrivelse (dct:description)</h4>
+<h4 id="Datatjeneste-valgfrie-egenskaper"><a class="anchor" href="#Datatjeneste-valgfrie-egenskaper"></a>4.5.3. Valgfrie egenskaper for <em>Datatjeneste</em></h4>
+<div class="sect4">
+<h5 id="Datatjeneste-beskrivelse"><a class="anchor" href="#Datatjeneste-beskrivelse"></a>4.5.3.1. Datatjeneste - beskrivelse (dct:description)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2854,8 +2920,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-dokumentasjon"><a class="anchor" href="#Datatjeneste-dokumentasjon"></a>Datatjeneste - dokumentasjon (foaf:page)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-dokumentasjon"><a class="anchor" href="#Datatjeneste-dokumentasjon"></a>4.5.3.2. Datatjeneste - dokumentasjon (foaf:page)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2900,8 +2966,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-i-samsvar-med"><a class="anchor" href="#Datatjeneste-i-samsvar-med"></a>Datatjeneste - i samsvar med (dct:conformsTo)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-i-samsvar-med"><a class="anchor" href="#Datatjeneste-i-samsvar-med"></a>4.5.3.3. Datatjeneste - i samsvar med (dct:conformsTo)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2946,8 +3012,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-landingsside"><a class="anchor" href="#Datatjeneste-landingsside"></a>Datatjeneste - landingsside (dcat:landingPage)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-landingsside"><a class="anchor" href="#Datatjeneste-landingsside"></a>4.5.3.4. Datatjeneste - landingsside (dcat:landingPage)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2992,8 +3058,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-lisens"><a class="anchor" href="#Datatjeneste-lisens"></a>Datatjeneste - lisens (dct:license)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-lisens"><a class="anchor" href="#Datatjeneste-lisens"></a>4.5.3.5. Datatjeneste - lisens (dct:license)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3043,8 +3109,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-medietype"><a class="anchor" href="#Datatjeneste-medietype"></a>Datatjeneste - medietype (dcat:mediaType)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-medietype"><a class="anchor" href="#Datatjeneste-medietype"></a>4.5.3.6. Datatjeneste - medietype (dcat:mediaType)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3094,8 +3160,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Datatjeneste-tilgangsrettigheter"><a class="anchor" href="#Datatjeneste-tilgangsrettigheter"></a>Datatjeneste - tilgangsrettigheter (dct:accessRights)</h4>
+<div class="sect4">
+<h5 id="Datatjeneste-tilgangsrettigheter"><a class="anchor" href="#Datatjeneste-tilgangsrettigheter"></a>4.5.3.7. Datatjeneste - tilgangsrettigheter (dct:accessRights)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3147,10 +3213,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="Distribution"><a class="anchor" href="#Distribution"></a>Klassen Distribusjon (dcat:Distribution)</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="Distribution"><a class="anchor" href="#Distribution"></a>4.6. Klassen Distribusjon (dcat:Distribution)</h3>
 <div id="img-klassenDistribusjon" class="imageblock">
 <div class="content">
 <a class="image" href="images/cdvno-distribution.png"><img src="images/cdvno-distribution.png" alt="cdvno distribution"></a>
@@ -3199,10 +3263,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
    .</pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Distribusjon-obligatoriske-egenskaper"><a class="anchor" href="#Distribusjon-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for <em>Distribusjon</em></h3>
 <div class="sect3">
-<h4 id="Distribusjon-tilgangsURL"><a class="anchor" href="#Distribusjon-tilgangsURL"></a>Distribusjon - tilgangsURL (dcat:accessURL)</h4>
+<h4 id="Distribusjon-obligatoriske-egenskaper"><a class="anchor" href="#Distribusjon-obligatoriske-egenskaper"></a>4.6.1. Obligatoriske egenskaper for <em>Distribusjon</em></h4>
+<div class="sect4">
+<h5 id="Distribusjon-tilgangsURL"><a class="anchor" href="#Distribusjon-tilgangsURL"></a>4.6.1.1. Distribusjon - tilgangsURL (dcat:accessURL)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3248,10 +3312,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Distribusjon-anbefalte-egenskaper"><a class="anchor" href="#Distribusjon-anbefalte-egenskaper"></a>Anbefalte egenskaper for <em>Distribusjon</em></h3>
 <div class="sect3">
-<h4 id="Distribusjon-beskrivelse"><a class="anchor" href="#Distribusjon-beskrivelse"></a>Distribusjon - beskrivelse (dct:description)</h4>
+<h4 id="Distribusjon-anbefalte-egenskaper"><a class="anchor" href="#Distribusjon-anbefalte-egenskaper"></a>4.6.2. Anbefalte egenskaper for <em>Distribusjon</em></h4>
+<div class="sect4">
+<h5 id="Distribusjon-beskrivelse"><a class="anchor" href="#Distribusjon-beskrivelse"></a>4.6.2.1. Distribusjon - beskrivelse (dct:description)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3296,8 +3360,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-format"><a class="anchor" href="#Distribusjon-format"></a>Distribusjon - format (dct:format)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-format"><a class="anchor" href="#Distribusjon-format"></a>4.6.2.2. Distribusjon - format (dct:format)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3347,8 +3411,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-lisens"><a class="anchor" href="#Distribusjon-lisens"></a>Distribusjon - lisens (dct:license)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-lisens"><a class="anchor" href="#Distribusjon-lisens"></a>4.6.2.3. Distribusjon - lisens (dct:license)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3398,8 +3462,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-status"><a class="anchor" href="#Distribusjon-status"></a>Distribusjon - status (adms:status)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-status"><a class="anchor" href="#Distribusjon-status"></a>4.6.2.4. Distribusjon - status (adms:status)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3449,8 +3513,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-tilgjengelighet"><a class="anchor" href="#Distribusjon-tilgjengelighet"></a>Distribusjon - tilgjengelighet (dcatap:availability)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-tilgjengelighet"><a class="anchor" href="#Distribusjon-tilgjengelighet"></a>4.6.2.5. Distribusjon - tilgjengelighet (dcatap:availability)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3501,10 +3565,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Distribusjon-valgfrie-egenskaper"><a class="anchor" href="#Distribusjon-valgfrie-egenskaper"></a>Valgfrie egenskaper for <em>Distribusjon</em></h3>
 <div class="sect3">
-<h4 id="Distribusjon-dokumentasjon"><a class="anchor" href="#Distribusjon-dokumentasjon"></a>Distribusjon - dokumentasjon (foaf:page)</h4>
+<h4 id="Distribusjon-valgfrie-egenskaper"><a class="anchor" href="#Distribusjon-valgfrie-egenskaper"></a>4.6.3. Valgfrie egenskaper for <em>Distribusjon</em></h4>
+<div class="sect4">
+<h5 id="Distribusjon-dokumentasjon"><a class="anchor" href="#Distribusjon-dokumentasjon"></a>4.6.3.1. Distribusjon - dokumentasjon (foaf:page)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3549,8 +3613,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-endringsdato"><a class="anchor" href="#Distribusjon-endringsdato"></a>Distribusjon - endringsdato (dct:modified)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-endringsdato"><a class="anchor" href="#Distribusjon-endringsdato"></a>4.6.3.2. Distribusjon - endringsdato (dct:modified)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3595,8 +3659,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-komprimeringsformat"><a class="anchor" href="#Distribusjon-komprimeringsformat"></a>Distribusjon - komprimeringsformat (dcat:compressFormat)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-komprimeringsformat"><a class="anchor" href="#Distribusjon-komprimeringsformat"></a>4.6.3.3. Distribusjon - komprimeringsformat (dcat:compressFormat)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3646,8 +3710,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-medietype"><a class="anchor" href="#Distribusjon-medietype"></a>Distribusjon - medietype (dcat:mediaType)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-medietype"><a class="anchor" href="#Distribusjon-medietype"></a>4.6.3.4. Distribusjon - medietype (dcat:mediaType)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3697,8 +3761,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-nedlastningslenke"><a class="anchor" href="#Distribusjon-nedlastningslenke"></a>Distribusjon - nedlastningslenke (dcat:downloadURL)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-nedlastningslenke"><a class="anchor" href="#Distribusjon-nedlastningslenke"></a>4.6.3.5. Distribusjon - nedlastningslenke (dcat:downloadURL)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3743,8 +3807,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-pakkeformat"><a class="anchor" href="#Distribusjon-pakkeformat"></a>Distribusjon - pakkeformat (dcat:packageFormat)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-pakkeformat"><a class="anchor" href="#Distribusjon-pakkeformat"></a>4.6.3.6. Distribusjon - pakkeformat (dcat:packageFormat)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3794,8 +3858,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-språk"><a class="anchor" href="#Distribusjon-språk"></a>Distribusjon - språk (dct:language)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-språk"><a class="anchor" href="#Distribusjon-språk"></a>4.6.3.7. Distribusjon - språk (dct:language)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3845,8 +3909,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-størrelse-varighet"><a class="anchor" href="#Distribusjon-størrelse-varighet"></a>Distribusjon - størrelse eller varighet (dct:extent)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-størrelse-varighet"><a class="anchor" href="#Distribusjon-størrelse-varighet"></a>4.6.3.8. Distribusjon - størrelse eller varighet (dct:extent)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3896,8 +3960,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-tilgangstjeneste"><a class="anchor" href="#Distribusjon-tilgangstjeneste"></a>Distribusjon - tilgangstjeneste (dcat:accessService)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-tilgangstjeneste"><a class="anchor" href="#Distribusjon-tilgangstjeneste"></a>4.6.3.9. Distribusjon - tilgangstjeneste (dcat:accessService)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3942,8 +4006,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-tittel"><a class="anchor" href="#Distribusjon-tittel"></a>Distribusjon - tittel (dct:title)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-tittel"><a class="anchor" href="#Distribusjon-tittel"></a>4.6.3.10. Distribusjon - tittel (dct:title)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3988,8 +4052,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Distribusjon-utgivelsesdato"><a class="anchor" href="#Distribusjon-utgivelsesdato"></a>Distribusjon - utgivelsesdato (dct:issued)</h4>
+<div class="sect4">
+<h5 id="Distribusjon-utgivelsesdato"><a class="anchor" href="#Distribusjon-utgivelsesdato"></a>4.6.3.11. Distribusjon - utgivelsesdato (dct:issued)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4036,10 +4100,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="Organization"><a class="anchor" href="#Organization"></a>Klassen Organisasjon (org:Organization)</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="Organization"><a class="anchor" href="#Organization"></a>4.7. Klassen Organisasjon (org:Organization)</h3>
 <div id="img-klassenOrganisasjon" class="imageblock">
 <div class="content">
 <a class="image" href="images/cdvno-organization.png"><img src="images/cdvno-organization.png" alt="cdvno organization"></a>
@@ -4088,10 +4150,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
    .</pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Organisasjon-obligatoriske-egenskaper"><a class="anchor" href="#Organisasjon-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for <em>Organisasjon</em></h3>
 <div class="sect3">
-<h4 id="Organisasjon-identifikator"><a class="anchor" href="#Organisasjon-identifikator"></a>Organisasjon – identifikator (dct:identifier)</h4>
+<h4 id="Organisasjon-obligatoriske-egenskaper"><a class="anchor" href="#Organisasjon-obligatoriske-egenskaper"></a>4.7.1. Obligatoriske egenskaper for <em>Organisasjon</em></h4>
+<div class="sect4">
+<h5 id="Organisasjon-identifikator"><a class="anchor" href="#Organisasjon-identifikator"></a>4.7.1.1. Organisasjon – identifikator (dct:identifier)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4141,8 +4203,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Organisasjon-tittel"><a class="anchor" href="#Organisasjon-tittel"></a>Organisasjon – navn (dct:title)</h4>
+<div class="sect4">
+<h5 id="Organisasjon-tittel"><a class="anchor" href="#Organisasjon-tittel"></a>4.7.1.2. Organisasjon – navn (dct:title)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4188,10 +4250,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Organisasjon-anbefalte-egenskaper"><a class="anchor" href="#Organisasjon-anbefalte-egenskaper"></a>Anbefalte egenskaper for <em>Organisasjon</em></h3>
 <div class="sect3">
-<h4 id="Organisasjon-type"><a class="anchor" href="#Organisasjon-type"></a>Organisasjon – type (dct:type)</h4>
+<h4 id="Organisasjon-anbefalte-egenskaper"><a class="anchor" href="#Organisasjon-anbefalte-egenskaper"></a>4.7.2. Anbefalte egenskaper for <em>Organisasjon</em></h4>
+<div class="sect4">
+<h5 id="Organisasjon-type"><a class="anchor" href="#Organisasjon-type"></a>4.7.2.1. Organisasjon – type (dct:type)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4243,10 +4305,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="Regel"><a class="anchor" href="#Regel"></a>Klassen Regel (cpsv:Rule)</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="Regel"><a class="anchor" href="#Regel"></a>4.8. Klassen Regel (cpsv:Rule)</h3>
 <div id="img-KlassenRegel" class="imageblock">
 <div class="content">
 <a class="image" href="images/cdvno-rule.png"><img src="images/cdvno-rule.png" alt="UML-diagram med klassen Regel, dens egenskaper og dens relasjon til en annen klasse."></a>
@@ -4287,10 +4347,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
    .</pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Regel-obligatoriske-egenskaper"><a class="anchor" href="#Regel-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Regel</em></h3>
 <div class="sect3">
-<h4 id="Regel-beskrivelse"><a class="anchor" href="#Regel-beskrivelse"></a>Regel - beskrivelse (dct:description)</h4>
+<h4 id="Regel-obligatoriske-egenskaper"><a class="anchor" href="#Regel-obligatoriske-egenskaper"></a>4.8.1. Obligatoriske egenskaper for klassen <em>Regel</em></h4>
+<div class="sect4">
+<h5 id="Regel-beskrivelse"><a class="anchor" href="#Regel-beskrivelse"></a>4.8.1.1. Regel - beskrivelse (dct:description)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4335,8 +4395,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Regel-identifikator"><a class="anchor" href="#Regel-identifikator"></a>Regel - identifikator (dct:identifier)</h4>
+<div class="sect4">
+<h5 id="Regel-identifikator"><a class="anchor" href="#Regel-identifikator"></a>4.8.1.2. Regel - identifikator (dct:identifier)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4386,8 +4446,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Regel-navn"><a class="anchor" href="#Regel-navn"></a>Regel - navn (dct:title)</h4>
+<div class="sect4">
+<h5 id="Regel-navn"><a class="anchor" href="#Regel-navn"></a>4.8.1.3. Regel - navn (dct:title)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4433,10 +4493,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Regel-anbefalte-egenskaper"><a class="anchor" href="#Regel-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Regel</em></h3>
 <div class="sect3">
-<h4 id="Regel-implementerer"><a class="anchor" href="#Regel-implementerer"></a>Regel - implementerer (cpsv:implements)</h4>
+<h4 id="Regel-anbefalte-egenskaper"><a class="anchor" href="#Regel-anbefalte-egenskaper"></a>4.8.2. Anbefalte egenskaper for klassen <em>Regel</em></h4>
+<div class="sect4">
+<h5 id="Regel-implementerer"><a class="anchor" href="#Regel-implementerer"></a>4.8.2.1. Regel - implementerer (cpsv:implements)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4481,8 +4541,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="Regel-språk"><a class="anchor" href="#Regel-språk"></a>Regel - språk (dct:language)</h4>
+<div class="sect4">
+<h5 id="Regel-språk"><a class="anchor" href="#Regel-språk"></a>4.8.2.2. Regel - språk (dct:language)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4533,10 +4593,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Regel-valgfrie-egenskaper"><a class="anchor" href="#Regel-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Regel</em></h3>
 <div class="sect3">
-<h4 id="Regel-type"><a class="anchor" href="#Regel-type"></a>Regel - type (dct:type)</h4>
+<h4 id="Regel-valgfrie-egenskaper"><a class="anchor" href="#Regel-valgfrie-egenskaper"></a>4.8.3. Valgfrie egenskaper for klassen <em>Regel</em></h4>
+<div class="sect4">
+<h5 id="Regel-type"><a class="anchor" href="#Regel-type"></a>4.8.3.1. Regel - type (dct:type)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4588,10 +4648,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="RegulativRessurs"><a class="anchor" href="#RegulativRessurs"></a>Klassen Regulativ ressurs (eli:LegalResource)</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="RegulativRessurs"><a class="anchor" href="#RegulativRessurs"></a>4.9. Klassen Regulativ ressurs (eli:LegalResource)</h3>
 <div id="img-KlassenRegulativRessurs" class="imageblock">
 <div class="content">
 <a class="image" href="images/cdvno-legal-resource.png"><img src="images/cdvno-legal-resource.png" alt="UML-diagram med klassen Regulativ ressurs og dens egenskaper."></a>
@@ -4632,10 +4690,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
    .</pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="RegulativRessurs-obligatoriske-egenskaper"><a class="anchor" href="#RegulativRessurs-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Regulativ ressurs</em></h3>
 <div class="sect3">
-<h4 id="RegulativRessurs-type"><a class="anchor" href="#RegulativRessurs-type"></a>Regulativ ressurs - type (dct:type)</h4>
+<h4 id="RegulativRessurs-obligatoriske-egenskaper"><a class="anchor" href="#RegulativRessurs-obligatoriske-egenskaper"></a>4.9.1. Obligatoriske egenskaper for klassen <em>Regulativ ressurs</em></h4>
+<div class="sect4">
+<h5 id="RegulativRessurs-type"><a class="anchor" href="#RegulativRessurs-type"></a>4.9.1.1. Regulativ ressurs - type (dct:type)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4686,10 +4744,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="RegulativRessurs-anbefalte-egenskaper"><a class="anchor" href="#RegulativRessurs-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Regulativ ressurs</em></h3>
 <div class="sect3">
-<h4 id="RegulativRessurs-beskrivelse"><a class="anchor" href="#RegulativRessurs-beskrivelse"></a>Regulativ ressurs - beskrivelse (dct:description)</h4>
+<h4 id="RegulativRessurs-anbefalte-egenskaper"><a class="anchor" href="#RegulativRessurs-anbefalte-egenskaper"></a>4.9.2. Anbefalte egenskaper for klassen <em>Regulativ ressurs</em></h4>
+<div class="sect4">
+<h5 id="RegulativRessurs-beskrivelse"><a class="anchor" href="#RegulativRessurs-beskrivelse"></a>4.9.2.1. Regulativ ressurs - beskrivelse (dct:description)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4734,8 +4792,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="RegulativRessurs-identifikator"><a class="anchor" href="#RegulativRessurs-identifikator"></a>Regulativ ressurs - identifikator (dct:identifier)</h4>
+<div class="sect4">
+<h5 id="RegulativRessurs-identifikator"><a class="anchor" href="#RegulativRessurs-identifikator"></a>4.9.2.2. Regulativ ressurs - identifikator (dct:identifier)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4785,8 +4843,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="RegulativRessurs-referanse"><a class="anchor" href="#RegulativRessurs-referanse"></a>Regulativ ressurs - referanse (rdfs:seeAlso)</h4>
+<div class="sect4">
+<h5 id="RegulativRessurs-referanse"><a class="anchor" href="#RegulativRessurs-referanse"></a>4.9.2.3. Regulativ ressurs - referanse (rdfs:seeAlso)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4831,8 +4889,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="RegulativRessurs-språk"><a class="anchor" href="#RegulativRessurs-språk"></a>Regulativ ressurs - språk (dct:language)</h4>
+<div class="sect4">
+<h5 id="RegulativRessurs-språk"><a class="anchor" href="#RegulativRessurs-språk"></a>4.9.2.4. Regulativ ressurs - språk (dct:language)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4882,8 +4940,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="RegulativRessurs-tittel"><a class="anchor" href="#RegulativRessurs-tittel"></a>Regulativ ressurs - tittel (dct:title)</h4>
+<div class="sect4">
+<h5 id="RegulativRessurs-tittel"><a class="anchor" href="#RegulativRessurs-tittel"></a>4.9.2.5. Regulativ ressurs - tittel (dct:title)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4929,10 +4987,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="RegulativRessurs-valgfrie-egenskaper"><a class="anchor" href="#RegulativRessurs-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Regulativ ressurs</em></h3>
 <div class="sect3">
-<h4 id="RegulativRessurs-relatertRegulativRessurs"><a class="anchor" href="#RegulativRessurs-relatertRegulativRessurs"></a>Regulativ ressurs - relatert regulativ ressurs (dct:relation)</h4>
+<h4 id="RegulativRessurs-valgfrie-egenskaper"><a class="anchor" href="#RegulativRessurs-valgfrie-egenskaper"></a>4.9.3. Valgfrie egenskaper for klassen <em>Regulativ ressurs</em></h4>
+<div class="sect4">
+<h5 id="RegulativRessurs-relatertRegulativRessurs"><a class="anchor" href="#RegulativRessurs-relatertRegulativRessurs"></a>4.9.3.1. Regulativ ressurs - relatert regulativ ressurs (dct:relation)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4979,10 +5037,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="Ressurs"><a class="anchor" href="#Ressurs"></a>Klassen Ressurs (dcat:Resource)</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="Ressurs"><a class="anchor" href="#Ressurs"></a>4.10. Klassen Ressurs (dcat:Resource)</h3>
 <div id="img-klassenRessurs" class="imageblock">
 <div class="content">
 <a class="image" href="images/cdvno-resource.png"><img src="images/cdvno-resource.png" alt="cdvno resource"></a>
@@ -5022,10 +5078,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tr>
 </tbody>
 </table>
-<div class="sect2">
-<h3 id="Ressurs-anbefalte-egenskaper"><a class="anchor" href="#Ressurs-anbefalte-egenskaper"></a>Anbefalte egenskaper for <em>Ressurs</em></h3>
 <div class="sect3">
-<h4 id="Ressurs-identifikator"><a class="anchor" href="#Ressurs-identifikator"></a>Ressurs - identifikator (dct:identifier)</h4>
+<h4 id="Ressurs-anbefalte-egenskaper"><a class="anchor" href="#Ressurs-anbefalte-egenskaper"></a>4.10.1. Anbefalte egenskaper for <em>Ressurs</em></h4>
+<div class="sect4">
+<h5 id="Ressurs-identifikator"><a class="anchor" href="#Ressurs-identifikator"></a>4.10.1.1. Ressurs - identifikator (dct:identifier)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5060,8 +5116,8 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="Ressurs-tittel"><a class="anchor" href="#Ressurs-tittel"></a>Ressurs - tittel (dct:title)</h4>
+<div class="sect4">
+<h5 id="Ressurs-tittel"><a class="anchor" href="#Ressurs-tittel"></a>4.10.1.2. Ressurs - tittel (dct:title)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5100,9 +5156,10 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-09-21 14:53:02 UTC
+Sist oppdatert 2023-09-25 14:11:46 UTC
 </div>
 </div>
 </body>
