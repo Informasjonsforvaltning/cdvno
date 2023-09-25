@@ -1,0 +1,23 @@
+== Krav til RDF-representasjon av innholdsbeskrivelse [[del2]]
+
+Kapittelet spesifiserer hvordan kravene beskrevet under <<del1>> implementeres i henhold til RDF. 
+
+include::navnerom.adoc[]
+
+include::leserveiledning.adoc[]
+
+include::forenklet-modell.adoc[leveloffset=+1]
+
+include::klassenBlokk.adoc[leveloffset=+1]
+
+include::klassenDatatjeneste.adoc[leveloffset=+1]
+
+include::klassenDistribusjon.adoc[leveloffset=+1]
+
+include::klassenOrganisasjon.adoc[leveloffset=+1]
+
+include::klassenRegel.adoc[leveloffset=+1]
+
+include::klassenRegulativRessurs.adoc[leveloffset=+1]
+
+include::klassenRessurs.adoc[leveloffset=+1]

@@ -1,0 +1,23 @@
+== Krav til innholdsbeskrivelse [[del1]]
+
+Spesifikasjonen tar utgangspunkt i at det er en «blokk» som skal beskrives («tagges») med metadata. I konteksten av denne spesifikasjonen betyr *blokk* innhold på en nettside. Det kan være en hel artikkel, eller deler av artikkelen, f.eks. et avsnitt. Innholdsprodusentene definerer selv hva som er å anse som en blokk i hvert enkelt tilfelle. Metadataene er ment å kun dekke _tverrgående behov_. Dvs. at metadataene ikke er en uttømmende liste, men representerer et minimumsgrunnlag som kan bygges videre på innad i sektorene.
+
+Dette kapittelet spesifiserer hvilke metadatafelter skal/bør/kan tas med når en blokk beskrives, uavhengig av hvordan kravene implementeres. 
+
+Kapittelet stiller også krav til bruk av kontrollerte vokabularer. I motsetning til fritekst, inneholder et *kontrollert vokabular* et forhåndsdefinert sett verdier som skal/bør/kan brukes til å fylle et metadatafelt.  Merk at foreslåtte kontrollerte vokabularer er ment å fungere som et utgangspunkt som skal utvides til å dekke nye behov eller utbroderes med sektorspesifikke vokabularer der disse finnes. ##Der det ikke er foreslått noen vokabularer er vi interessert i tilbakemelding på om de ulike sektorene har egne vokabularer som kan brukes, eller om det er grunnlag for å utvikle et felles vokabular.##
+
+Tabellene i kapittelet er sortert etter feltnavn. 
+
+
+
+=== Obligatoriske metadata i en innholdsbeskrivelse
+
+##_mer tekst kommer_##
+
+=== Anbefalte metadata i en innholdsbeskrivelse
+
+##_mer tekst kommer_##
+
+=== Valgfrie metadata i en innholdsbeskrivelse
+
+##_mer tekst kommer_##
