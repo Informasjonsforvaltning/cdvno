@@ -12,12 +12,152 @@ Tabellene i kapittelet er sortert etter feltnavn.
 
 === Obligatoriske metadata i en innholdsbeskrivelse
 
-##_mer tekst kommer_##
+[[Tabell-obligatoriske-metadata]]
+.Obligatoriske metadata i en innholdsbeskrivelse
+[cols="15s,30,30,25"]
+|===
+| Obligatorisk |*Forklaring*|*Kontrollert vokabular*|*Eksempler*
+|dato sist oppdatert
+|Datoen for når blokken ble sist oppdatert. Oppgis i `åååå-mm-dd`.
+|-
+|2023-06-07
 
+|hovedspråk
+|Språket i all hovedsak blokken er på.
+|Språkkode i samsvar med ISO 639.
+|Bokmål
+
+|identifikator
+|Identifikator til blokken, som er unik innen en gitt kontekst og som er varig.
+
+Identifikator er som regel automatisk generert av verktøystøtte.
+|-
+| \https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak
+
+
+|tema
+|Tema(er) som blokken handler om.
+|Verdien(e) bør velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme  &#x29C9;, window="_blank", role="ext-link"], https://psi.norge.no/los/struktur.html[Los  &#x29C9;, window="_blank", role="ext-link"], og/eller andre sektorspesifikke vokabularer.
+| https://psi.norge.no/los/tema/avlastning-og-stotte.html[Avlastning og støtte &#x29C9;, window="_blank", role="ext-link"] (fra LOS)
+
+|utgivelsesdato
+|Datoen for når blokken ble første gang opprettet på nettsiden. Oppgis i `åååå-mm-dd`.
+|-
+|2023-05-01
+
+|utgiver
+|Navn og identifikator på organisasjonen som er ansvarlig for å gjøre blokken tilgjengelig, gjerne den organisasjonen som drifter nettsiden informasjonen er tilgjengelig på.
+
+Det skal oppgis hvilket språk navnet er skrevet på.
+|Som identifikator bør organisasjonsnummer i Enhetsregisteret brukes.
+
+Språkkode skal være i samsvar med ISO 639.
+|Norsk Helsenett, org.nr. 994598759
+|===
+ 
 === Anbefalte metadata i en innholdsbeskrivelse
 
-##_mer tekst kommer_##
+[[Tabell-anbefalte-metadata]]
+.Anbefalte metadata i en innholdsbeskrivelse
+[cols="15s,30,30,25"]
+|===
+| Anbefalt |*Forklaring*|*Kontrollert vokabular*|*Eksempler*
+|beskrivelse
+| Fritekstbeskrivelse av blokkens innhold. Tilsvarer _description-tag_ i CMS eller til søkemotoroptimalisering.
 
+Det skal oppgis hvilket språk beskrivelsen er skrevet på.
+|Språkkode skal være i samsvar med ISO 639.|Informasjon om ulike avlastningstiltak
+
+|dekningsområde
+|Geografisk eller administrativt område som innholdet i blokken er relevant for. Kan f.eks. være en eller flere kommuner, skoledistrikter, helseregioner, fylker etc. Gjelder det hele landet, sett _Norge_.
+|Minst én verdi skal velges fra en av følgende kontrollerte vokabularer: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Kontinent  &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Land  &#x29C9;, window="_blank", role="ext-link"]; https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Sted  &#x29C9;, window="_blank", role="ext-link"]; http://sws.geonames.org/[GeoNavn  &#x29C9;, window="_blank", role="ext-link"].
+
+For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter  &#x29C9;, window="_blank", role="ext-link"] brukes.
+
+Andre geografiske eller administrative inndelinger i Norge kan også brukes. F.eks. helseregion, skolekrets osv.
+|Norge, Hamar kommune
+
+|distribusjon
+|Referanse(r) til beskrivelse av distribusjon(er) av blokkens innhold, dvs. hvor på nett blokken kan nås, i hvilket format osv.
+|-
+| \https://examples.org/distri1
+
+|målgruppe
+|Målgruppe som blokken er ment for, dvs. typiske lesere.
+|Verdien bør velges fra kontrollert vokabular
+|Fosterforeldre
+
+|tittel
+|Tittelen på blokken. Tilsvarer _title-tag_ i CMS eller til søkemotoroptimalisering.
+
+Det skal oppgis hvilket språk tittelen er skrevet på.
+|Språkkode skal være i samsvar med ISO 639.
+|Avlastningstiltak
+
+|type informasjon
+|Type informasjon som blokken inneholder, f.eks. informasjon om tjenester, rettigheter, plikter, klagemuligheter, søknader, generell veiledning osv.|Verdien bør velges fra et [sektorspesifikt] kontrollert vokabular.
+|Rettigheter
+|===
+ 
+ 
 === Valgfrie metadata i en innholdsbeskrivelse
+
+[[Tabell-valgfrie-metadata]]
+.Valgfrie metadata i en innholdsbeskrivelse
+[cols="15s,30,30,25"]
+|===
+| Valgfri |*Forklaring*|*Kontrollert vokabular*|*Eksempler*
+|
+|Hvilke brukerbehov som typisk ligger til grunn for at en bruker oppsøker informasjonen i blokken, f.eks. en diagnose, en livshendelse o.l.
+|Verdien bør velges fra kontrollerte vokabularer, f.eks. https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/ox8/life-event/LE[EUs kontrollerte vokabularer for livshendelser &#x29C9;, window="_blank", role="ext-link"], sektorspesifikke kodeverk (SNOMED CT osv.)
+|Å bli fosterforelder
+
+|følger regel
+|Referanse til f.eks. regelverk som regulerer utførelsen av en tjeneste, rettighet etc. som blokkens innhold omhandler.
+|-
+| 
+
+|gyldighetsperiode
+|Tidsrommet innholdet i blokken er gyldig i. Oppgis som start- og sluttdato, i `åååå-mm-dd`.
+|-
+|2020-02-15 – 2022-05-15
+
+|har relatert regulativ ressurs
+|Referanse til f.eks. lovverk som regulerer utførelsen av en tjeneste, rettighet etc. som blokkens innhold omhandler.
+|-
+|Lov om barnehager. Barnehageloven regulerer barnehagene i Norge og gjelder for både private og offentlige barnehager. https://www.regjeringen.no/no/tema/familie-og-barn/barnehager/artikler/regelverk-pa-barnehageomradet-/id620720/[https://www.regjeringen.no/no/tema/familie-og-barn/barnehager/artikler/regelverk-pa-barnehageomradet-/id620720/ &#x29C9;, window="_blank", role="ext-link"]
+
+|kilde
+|Tittel på nettkilden som er opphav til blokken og/eller lenke til denne.
+
+Det skal oppgis hvilket språk tittelen er skrevet på.
+|Språkkode i samsvar med ISO 639.
+|Helsenorge, https://www.helsenorge.no/[https://www.helsenorge.no/ &#x29C9;, window="_blank", role="ext-link"]
+
+|omhandler
+|Hvem (ikke som individ, men gruppe) blokken handler om.
+|Verdien bør velges fra kontrollert vokabular
+|Fosterbarn
+
+|oppdateringsfrekvens
+|Hvor ofte blokken oppdateres.
+|Verdien skal velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frequency &#x29C9;, window="_blank", role="ext-link"]
+|Hver fjortende dag
+
+|produsent|Navn og identifikator på organisasjonen som er produsent av blokken. Sammenfaller som regel med «utgiver», men kan være tilfeller der det ikke er samme organisasjonen som står bak både produksjonen og publiseringen av blokken.
+
+Det skal oppgis hvilket språk tittelen er skrevet på.
+|Som identifikator bør organisasjonsnummer i Enhetsregisteret brukes.
+
+Språkkode i samsvar med ISO 639.
+|Helsedirektoratet, org.nr. 983544622
+
+|undertema
+|Subtema som blokken handler om. Brukes f.eks. hvis «tema» er for bredt og det finnes et undertema som er mer presist dekkende.
+|Bør velges fra et kontrollert vokabular utgiver har kjennskap til (f.eks. SNOMED CT i helsesektoren)
+| https://browser.ihtsdotools.org/?perspective=full&conceptId1=105386004&edition=MAIN/SNOMEDCT-NO&release=&languages=no,en[Avlastningsopphold &#x29C9;, window="_blank", role="ext-link"] (fra SNOMED CT)
+|===
+ 
+=== Eksempel på en minimums beskrivelse av en blokk
 
 ##_mer tekst kommer_##

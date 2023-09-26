@@ -534,6 +534,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_obligatoriske_metadata_i_en_innholdsbeskrivelse">3.1. Obligatoriske metadata i en innholdsbeskrivelse</a></li>
 <li><a href="#_anbefalte_metadata_i_en_innholdsbeskrivelse">3.2. Anbefalte metadata i en innholdsbeskrivelse</a></li>
 <li><a href="#_valgfrie_metadata_i_en_innholdsbeskrivelse">3.3. Valgfrie metadata i en innholdsbeskrivelse</a></li>
+<li><a href="#_eksempel_på_en_minimums_beskrivelse_av_en_blokk">3.4. Eksempel på en minimums beskrivelse av en blokk</a></li>
 </ul>
 </li>
 <li><a href="#del2">4. Krav til RDF-representasjon av innholdsbeskrivelse</a>
@@ -758,7 +759,7 @@ Vennligst meld dine tilbakemeldinger inn som <a href="https://github.com/Informa
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>under utvikling</mark><br>
-<strong>Sist oppdatert</strong>: 2023-09-25</p>
+<strong>Sist oppdatert</strong>: 2023-09-26</p>
 </div>
 </div>
 </div>
@@ -867,18 +868,202 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 <div class="sect2">
 <h3 id="_obligatoriske_metadata_i_en_innholdsbeskrivelse"><a class="anchor" href="#_obligatoriske_metadata_i_en_innholdsbeskrivelse"></a>3.1. Obligatoriske metadata i en innholdsbeskrivelse</h3>
-<div class="paragraph">
-<p><mark><em>mer tekst kommer</em></mark></p>
-</div>
+<table id="Tabell-obligatoriske-metadata" class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Tabell 1. Obligatoriske metadata i en innholdsbeskrivelse</caption>
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 30%;">
+<col style="width: 30%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Obligatorisk</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kontrollert vokabular</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempler</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dato sist oppdatert</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datoen for når blokken ble sist oppdatert. Oppgis i <code>åååå-mm-dd</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2023-06-07</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>hovedspråk</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Språket i all hovedsak blokken er på.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Språkkode i samsvar med ISO 639.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bokmål</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>identifikator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator til blokken, som er unik innen en gitt kontekst og som er varig.</p>
+<p class="tableblock">Identifikator er som regel automatisk generert av verktøystøtte.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>tema</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tema(er) som blokken handler om.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien(e) bør velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme  &#x29C9;</a>, <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los  &#x29C9;</a>, og/eller andre sektorspesifikke vokabularer.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/tema/avlastning-og-stotte.html" class="ext-link" target="_blank" rel="noopener">Avlastning og støtte &#x29C9;</a> (fra LOS)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>utgivelsesdato</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datoen for når blokken ble første gang opprettet på nettsiden. Oppgis i <code>åååå-mm-dd</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-01</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>utgiver</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navn og identifikator på organisasjonen som er ansvarlig for å gjøre blokken tilgjengelig, gjerne den organisasjonen som drifter nettsiden informasjonen er tilgjengelig på.</p>
+<p class="tableblock">Det skal oppgis hvilket språk navnet er skrevet på.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Som identifikator bør organisasjonsnummer i Enhetsregisteret brukes.</p>
+<p class="tableblock">Språkkode skal være i samsvar med ISO 639.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk Helsenett, org.nr. 994598759</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_anbefalte_metadata_i_en_innholdsbeskrivelse"><a class="anchor" href="#_anbefalte_metadata_i_en_innholdsbeskrivelse"></a>3.2. Anbefalte metadata i en innholdsbeskrivelse</h3>
-<div class="paragraph">
-<p><mark><em>mer tekst kommer</em></mark></p>
-</div>
+<table id="Tabell-anbefalte-metadata" class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Tabell 2. Anbefalte metadata i en innholdsbeskrivelse</caption>
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 30%;">
+<col style="width: 30%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anbefalt</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kontrollert vokabular</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempler</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fritekstbeskrivelse av blokkens innhold. Tilsvarer <em>description-tag</em> i CMS eller til søkemotoroptimalisering.</p>
+<p class="tableblock">Det skal oppgis hvilket språk beskrivelsen er skrevet på.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Språkkode skal være i samsvar med ISO 639.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjon om ulike avlastningstiltak</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dekningsområde</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geografisk eller administrativt område som innholdet i blokken er relevant for. Kan f.eks. være en eller flere kommuner, skoledistrikter, helseregioner, fylker etc. Gjelder det hele landet, sett <em>Norge</em>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minst én verdi skal velges fra en av følgende kontrollerte vokabularer: <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener">Kontinent  &#x29C9;</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Land  &#x29C9;</a>; <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place" class="ext-link" target="_blank" rel="noopener">Sted  &#x29C9;</a>; <a href="http://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNavn  &#x29C9;</a>.</p>
+<p class="tableblock">For å angi dekningsområde i Norge, bør Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative enheter  &#x29C9;</a> brukes.</p>
+<p class="tableblock">Andre geografiske eller administrative inndelinger i Norge kan også brukes. F.eks. helseregion, skolekrets osv.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norge, Hamar kommune</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>distribusjon</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse(r) til beskrivelse av distribusjon(er) av blokkens innhold, dvs. hvor på nett blokken kan nås, i hvilket format osv.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://examples.org/distri1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>målgruppe</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Målgruppe som blokken er ment for, dvs. typiske lesere.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra kontrollert vokabular</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fosterforeldre</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>tittel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tittelen på blokken. Tilsvarer <em>title-tag</em> i CMS eller til søkemotoroptimalisering.</p>
+<p class="tableblock">Det skal oppgis hvilket språk tittelen er skrevet på.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Språkkode skal være i samsvar med ISO 639.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avlastningstiltak</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>type informasjon</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type informasjon som blokken inneholder, f.eks. informasjon om tjenester, rettigheter, plikter, klagemuligheter, søknader, generell veiledning osv.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra et [sektorspesifikt] kontrollert vokabular.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rettigheter</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_valgfrie_metadata_i_en_innholdsbeskrivelse"><a class="anchor" href="#_valgfrie_metadata_i_en_innholdsbeskrivelse"></a>3.3. Valgfrie metadata i en innholdsbeskrivelse</h3>
+<table id="Tabell-valgfrie-metadata" class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Tabell 3. Valgfrie metadata i en innholdsbeskrivelse</caption>
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 30%;">
+<col style="width: 30%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Valgfri</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kontrollert vokabular</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempler</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hvilke brukerbehov som typisk ligger til grunn for at en bruker oppsøker informasjonen i blokken, f.eks. en diagnose, en livshendelse o.l.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra kontrollerte vokabularer, f.eks. <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/ox8/life-event/LE" class="ext-link" target="_blank" rel="noopener">EUs kontrollerte vokabularer for livshendelser &#x29C9;</a>, sektorspesifikke kodeverk (SNOMED CT osv.)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Å bli fosterforelder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>følger regel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til f.eks. regelverk som regulerer utførelsen av en tjeneste, rettighet etc. som blokkens innhold omhandler.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>gyldighetsperiode</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrommet innholdet i blokken er gyldig i. Oppgis som start- og sluttdato, i <code>åååå-mm-dd</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2020-02-15 – 2022-05-15</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>har relatert regulativ ressurs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til f.eks. lovverk som regulerer utførelsen av en tjeneste, rettighet etc. som blokkens innhold omhandler.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lov om barnehager. Barnehageloven regulerer barnehagene i Norge og gjelder for både private og offentlige barnehager. <a href="https://www.regjeringen.no/no/tema/familie-og-barn/barnehager/artikler/regelverk-pa-barnehageomradet-/id620720/" class="ext-link" target="_blank" rel="noopener">https://www.regjeringen.no/no/tema/familie-og-barn/barnehager/artikler/regelverk-pa-barnehageomradet-/id620720/ &#x29C9;</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>kilde</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tittel på nettkilden som er opphav til blokken og/eller lenke til denne.</p>
+<p class="tableblock">Det skal oppgis hvilket språk tittelen er skrevet på.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Språkkode i samsvar med ISO 639.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Helsenorge, <a href="https://www.helsenorge.no/" class="ext-link" target="_blank" rel="noopener">https://www.helsenorge.no/ &#x29C9;</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>omhandler</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hvem (ikke som individ, men gruppe) blokken handler om.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør velges fra kontrollert vokabular</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fosterbarn</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>oppdateringsfrekvens</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hvor ofte blokken oppdateres.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency" class="ext-link" target="_blank" rel="noopener">Frequency &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hver fjortende dag</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>produsent</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navn og identifikator på organisasjonen som er produsent av blokken. Sammenfaller som regel med «utgiver», men kan være tilfeller der det ikke er samme organisasjonen som står bak både produksjonen og publiseringen av blokken.</p>
+<p class="tableblock">Det skal oppgis hvilket språk tittelen er skrevet på.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Som identifikator bør organisasjonsnummer i Enhetsregisteret brukes.</p>
+<p class="tableblock">Språkkode i samsvar med ISO 639.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Helsedirektoratet, org.nr. 983544622</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>undertema</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Subtema som blokken handler om. Brukes f.eks. hvis «tema» er for bredt og det finnes et undertema som er mer presist dekkende.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bør velges fra et kontrollert vokabular utgiver har kjennskap til (f.eks. SNOMED CT i helsesektoren)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105386004&amp;edition=MAIN/SNOMEDCT-NO&amp;release=&amp;languages=no,en" class="ext-link" target="_blank" rel="noopener">Avlastningsopphold &#x29C9;</a> (fra SNOMED CT)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_eksempel_på_en_minimums_beskrivelse_av_en_blokk"><a class="anchor" href="#_eksempel_på_en_minimums_beskrivelse_av_en_blokk"></a>3.4. Eksempel på en minimums beskrivelse av en blokk</h3>
 <div class="paragraph">
 <p><mark><em>mer tekst kommer</em></mark></p>
 </div>
@@ -897,7 +1082,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <p>Navnerom for denne spesifikasjonen er <code>https://informasjonsforvaltning.github.io/cdvno#</code> (<mark>det skal være en offisiell URI etter ferdigstilling av spesifikasjonen, mest sannsynlig <code>https://data.norge.no/vocabulary/cdvno#</code></mark>)</p>
 </div>
 <table id="Tabell-navnerom" class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 1. Oversikt over navnerom som er brukt i denne spesifikasjonen (tabellen nedenfor er deskriptiv)</caption>
+<caption class="title">Tabell 4. Oversikt over navnerom som er brukt i denne spesifikasjonen (tabellen nedenfor er deskriptiv)</caption>
 <colgroup>
 <col style="width: 10%;">
 <col style="width: 45%;">
@@ -5159,7 +5344,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-09-25 14:11:46 UTC
+Sist oppdatert 2023-09-26 10:58:09 UTC
 </div>
 </div>
 </body>
