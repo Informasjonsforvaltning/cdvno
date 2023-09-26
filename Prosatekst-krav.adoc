@@ -16,7 +16,7 @@ Tabellene i kapittelet er sortert etter feltnavn.
 .Obligatoriske metadata i en innholdsbeskrivelse
 [cols="15s,30,30,25"]
 |===
-| Obligatorisk |*Forklaring*|*Kontrollert vokabular*|*Eksempler*
+| Navn på metadata |*Forklaring*|*Kontrollert vokabular*|*Eksempler*
 |dato sist oppdatert
 |Datoen for når blokken ble sist oppdatert. Oppgis i `åååå-mm-dd`.
 |-
@@ -61,7 +61,7 @@ Språkkode skal være i samsvar med ISO 639.
 .Anbefalte metadata i en innholdsbeskrivelse
 [cols="15s,30,30,25"]
 |===
-| Anbefalt |*Forklaring*|*Kontrollert vokabular*|*Eksempler*
+| Navn på metadata |*Forklaring*|*Kontrollert vokabular*|*Eksempler*
 |beskrivelse
 | Fritekstbeskrivelse av blokkens innhold. Tilsvarer _description-tag_ i CMS eller til søkemotoroptimalisering.
 
@@ -106,8 +106,8 @@ Det skal oppgis hvilket språk tittelen er skrevet på.
 .Valgfrie metadata i en innholdsbeskrivelse
 [cols="15s,30,30,25"]
 |===
-| Valgfri |*Forklaring*|*Kontrollert vokabular*|*Eksempler*
-|
+| Navn på metadata |*Forklaring*|*Kontrollert vokabular*|*Eksempler*
+|brukerbehov
 |Hvilke brukerbehov som typisk ligger til grunn for at en bruker oppsøker informasjonen i blokken, f.eks. en diagnose, en livshendelse o.l.
 |Verdien bør velges fra kontrollerte vokabularer, f.eks. https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/ox8/life-event/LE[EUs kontrollerte vokabularer for livshendelser &#x29C9;, window="_blank", role="ext-link"], sektorspesifikke kodeverk (SNOMED CT osv.)
 |Å bli fosterforelder

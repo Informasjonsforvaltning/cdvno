@@ -9,9 +9,9 @@ Formålet med spesifikasjonen er å legge til rette for en felles måte å beskr
 
 Spesifikasjonen er anbefalt brukt til å beskrive innhold som er publisert eller ment å publiseres på nett, samt å utveksle/tilgjengeliggjøre beskrivelsene. Spesifikasjonen er basert på https://data.norge.no/specification/dcat-ap-no/["Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO) &#x29C9;", window="_blank", role="ext-link"], med utvidelser for å dekke behov identifisert gjennom utarbeidelsen av spesifikasjonen. 
 
-<<del1>> er formulert uavhengig av hvordan de implementeres. 
+Kravene er i <<del1>> formulert uavhengig av hvordan de implementeres. 
 
-<<del2>> spesifiserer hvordan kravene beskrevet under <<del1>> skal implementeres i henhold til  https://www.w3.org/RDF/[Resource Description Framework (RDF) &#x29C9;, window="_blank", role="ext-link"]. Beskrivelsene utformet i henhold til spesifikasjonen vil dermed også være RDF-baserte og maskinprosesserbare. 
+<<del2>> spesifiserer hvordan kravene beskrevet i <<del1>> skal implementeres i henhold til  https://www.w3.org/RDF/[Resource Description Framework (RDF) &#x29C9;, window="_blank", role="ext-link"]. Beskrivelsene utformet i henhold til spesifikasjonen vil dermed også være RDF-baserte og maskinprosesserbare. 
 
 <<del2>> inneholder også engelske navn (_English name_) og anvendelsesbeskrivelser (_Usage note_). Det gjøres oppmerksom på at engelske navn eller anvendelsesbeskrivelser ikke alle er ordrette sitater fra originale engelske tekster. Vi kan ha valgt en annen tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
 

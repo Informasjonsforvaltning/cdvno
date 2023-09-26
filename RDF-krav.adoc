@@ -1,6 +1,6 @@
 == Krav til RDF-representasjon av innholdsbeskrivelse [[del2]]
 
-Kapittelet spesifiserer hvordan kravene beskrevet under <<del1>> implementeres i henhold til RDF. 
+Kapittelet spesifiserer hvordan kravene beskrevet i <<del1>> implementeres i henhold til RDF. 
 
 include::navnerom.adoc[]
 
