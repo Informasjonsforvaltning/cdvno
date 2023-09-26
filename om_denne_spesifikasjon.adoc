@@ -19,7 +19,7 @@ Kravene er i <<del1>> formulert uavhengig av hvordan de implementeres.
 
 <<del1>> er ment for deg som skal beskrive («tagge») innhold på nett, uavhengig av teknisk bakgrunn.
 
-<<del2>> er primært for deg som skal utvikle/tilpasse verktøystøtte (f.eks. CMS) for innholdsbeskrivelse. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i https://www.w3.org/TR/turtle/[RDF Turtle &#x29C9;, window="_blank", role="ext-link"]. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
+<<del2>> er primært ment for deg som skal utvikle/tilpasse verktøystøtte (f.eks. CMS) for innholdsbeskrivelse. Som støtte til teknisk implementering er det i spesifikasjonen også tatt med en del eksempler i https://www.w3.org/TR/turtle/[RDF Turtle &#x29C9;, window="_blank", role="ext-link"]. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
 
 Spesifikasjonen er ikke for deg som er leser av det publiserte innholdet som skal beskrives. 
 
