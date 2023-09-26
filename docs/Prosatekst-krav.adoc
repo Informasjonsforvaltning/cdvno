@@ -52,7 +52,7 @@ Det skal oppgis hvilket språk navnet er skrevet på.
 |Som identifikator bør organisasjonsnummer i Enhetsregisteret brukes.
 
 Språkkode skal være i samsvar med ISO 639.
-|Norsk helsenett, org.nr. 994598759
+|Norsk helsenett SF, org.nr. 994598759
 |===
  
 === Anbefalte metadata i en innholdsbeskrivelse
@@ -164,7 +164,7 @@ Følgende illustrativt eksempel viser en minimums beskrivelse av en blokk, dvs. 
 
 * *dato sist oppdatert*: 2022-04-08
 * *hovedspråk*: bokmål
-* *identifikator*: \https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak
+* *identifikator*: https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak[https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak &#x29C9;, window="_blank", role="ext-link"]
 * *tema*: https://psi.norge.no/los/tema/avlastning-og-stotte.html[Avlastning og støtte &#x29C9;, window="_blank", role="ext-link"]
 * *utgivelsesdato*: 2020-01-01
-* *utgiver*: Norsk helsenett, org.nr. 994598759
+* *utgiver*: Norsk helsenett SF, org.nr. 994598759
