@@ -2,13 +2,13 @@
 
 Ref. eksemplet med minimumsbeskrivelse illustrert i <<Eksempel-minimumsbeskrivelse>>:
 
-* Her er link:./examples/index-minimum[HTML-visning] av minimumsbeskrivelsen, utformet i henhold til denne delen av spesifikasjonen.
-* Her er link:./examples/example-minimum.ttl[RDF Turtle-representasjon] av ovennevnte beskrivelsen, utformet i henhold til denne delen av spesifikasjonen. 
+* link:./examples/index-minimum[Her er HTML-visning] av minimumsbeskrivelsen, utformet i henhold til denne delen av spesifikasjonen.
+* link:./examples/example-minimum.ttl[Her er RDF Turtle-representasjon] av ovennevnte beskrivelsen, utformet i henhold til denne delen av spesifikasjonen. 
 
 === Et illustrativt eksempel med flere metadatafelter utfylt og med en del dummydata [[Eksempel-dummy]]
 
 Som et illustrativt demo-/test-eksempel, la oss si at vi ønsker å tagge https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak["\"Klage på vedtak\" &#x29C9;", window="_blank", role="ext-link"] under "Støtte og avlastning til pårørende med store omsorgsoppgaver" på helse.norge.no: 
 
-* Her er link:./examples/index-dummy[HTML-visning] av en demo-instans av klassen "Block (`cdvno:Block`)" og dens distribusjon, med en del dummydata.
-* Her er link:./examples/example-dummy.ttl[RDF Turtle-representasjon] av ovennevnte demo-instansen av klassen "Block (`cdvno:Block`)" og dens distribusjon.  
+* link:./examples/index-dummy[Her er HTML-visning] av en demo-instans av klassen "Block (`cdvno:Block`)" og dens distribusjon, med en del dummydata.
+* link:./examples/example-dummy.ttl[Her er RDF Turtle-representasjon] av ovennevnte demo-instansen av klassen "Block (`cdvno:Block`)" og dens distribusjon.  
 
