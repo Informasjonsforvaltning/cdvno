@@ -534,7 +534,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_obligatoriske_metadata_i_en_innholdsbeskrivelse">2.1. Obligatoriske metadata i en innholdsbeskrivelse</a></li>
 <li><a href="#_anbefalte_metadata_i_en_innholdsbeskrivelse">2.2. Anbefalte metadata i en innholdsbeskrivelse</a></li>
 <li><a href="#_valgfrie_metadata_i_en_innholdsbeskrivelse">2.3. Valgfrie metadata i en innholdsbeskrivelse</a></li>
-<li><a href="#_eksempel_på_en_minimums_beskrivelse_av_en_blokk">2.4. Eksempel på en minimums beskrivelse av en blokk</a></li>
+<li><a href="#Eksempel-minimumsbeskrivelse">2.4. Eksempel på en minimumsbeskrivelse av en blokk</a></li>
 </ul>
 </li>
 <li><a href="#del2">3. Krav til RDF-representasjon av innholdsbeskrivelse</a>
@@ -543,7 +543,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Leserveiledning">3.2. Leserveiledning</a></li>
 <li><a href="#Forenklet-modell">3.3. Forenklet metadatamodell</a>
 <ul class="sectlevel3">
-<li><a href="#eksempel">3.3.1. Et tenkt eksempel på anvendelse av denne spesifikasjonen</a></li>
+<li><a href="#Eksempel-minimumsbeskrivelse-RDF">3.3.1. Et illustrativt eksempel med minimumsbeskrivelse</a></li>
+<li><a href="#Eksempel-dummy">3.3.2. Et illustrativt eksempel med flere metadatafelter utfylt og med en del dummydata</a></li>
 </ul>
 </li>
 <li><a href="#Block">3.4. Klassen Blokk (cdvno:Block)</a>
@@ -1063,7 +1064,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </table>
 </div>
 <div class="sect2">
-<h3 id="_eksempel_på_en_minimums_beskrivelse_av_en_blokk"><a class="anchor" href="#_eksempel_på_en_minimums_beskrivelse_av_en_blokk"></a>2.4. Eksempel på en minimums beskrivelse av en blokk</h3>
+<h3 id="Eksempel-minimumsbeskrivelse"><a class="anchor" href="#Eksempel-minimumsbeskrivelse"></a>2.4. Eksempel på en minimumsbeskrivelse av en blokk</h3>
 <div class="paragraph">
 <p>Følgende illustrativt eksempel viser en minimums beskrivelse av en blokk, dvs. med kun obligatoriske metadata:</p>
 </div>
@@ -1299,17 +1300,33 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 <p>Bortsett fra klassen Datasett (<code>dcat:Dataset</code>) som er spesifisert i nevnte <a href="https://data.norge.no/specification/dcat-ap-no#Datasett" class="ext-link" target="_blank" rel="noopener">DCAT-AP-NO &#x29C9;</a>, og klassen Innhold (<code>rdfs:Resource</code>) som er <a href="https://www.w3.org/TR/rdf12-schema/#ch_resource" class="ext-link" target="_blank" rel="noopener">en generisk klasse for alt &#x29C9;</a>, er alle de andre klassene i figuren over, spesifisert nærmere i denne spesifikasjonen.</p>
 </div>
 <div class="sect3">
-<h4 id="eksempel"><a class="anchor" href="#eksempel"></a>3.3.1. Et tenkt eksempel på anvendelse av denne spesifikasjonen</h4>
+<h4 id="Eksempel-minimumsbeskrivelse-RDF"><a class="anchor" href="#Eksempel-minimumsbeskrivelse-RDF"></a>3.3.1. Et illustrativt eksempel med minimumsbeskrivelse</h4>
 <div class="paragraph">
-<p>Som et konkret demo-/test-eksempel, la oss si at vi ønsker å tagge <a href="https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak" class="ext-link" target="_blank" rel="noopener">"Klage på vedtak" &#x29C9;</a> under "Støtte og avlastning til pårørende med store omsorgsoppgaver" på helse.norge.no:</p>
+<p>Ref. eksemplet med minimumsbeskrivelse illustrert i <a href="#Eksempel-minimumsbeskrivelse">Delkapittel 2.4</a>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Her er <a href="./test">HTML-visning</a> av en demo-instans av klassen "Block (<code>cdvno:Block</code>)" og dens distribusjon.</p>
+<p>Her er <a href="/./examples/index-minimum">HTML-visning</a> av minimumsbeskrivelsen, utformet i henhold til denne delen av spesifikasjonen.</p>
 </li>
 <li>
-<p>Her er <a href="./test/test.ttl">RDF Turtle-representasjon</a> av demo-instansen av klassen "Block (<code>cdvno:Block</code>)" og dens distribusjon.</p>
+<p>Her er <a href="/./examples/example-minimum.ttl">RDF Turtle-representasjon</a> av ovennevnte beskrivelsen, utformet i henhold til denne delen av spesifikasjonen.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Eksempel-dummy"><a class="anchor" href="#Eksempel-dummy"></a>3.3.2. Et illustrativt eksempel med flere metadatafelter utfylt og med en del dummydata</h4>
+<div class="paragraph">
+<p>Som et illustrativt demo-/test-eksempel, la oss si at vi ønsker å tagge <a href="https://www.helsenorge.no/hjelpetilbud-i-kommunene/avlastningstiltak/#klage-pa-vedtak" class="ext-link" target="_blank" rel="noopener">"Klage på vedtak" &#x29C9;</a> under "Støtte og avlastning til pårørende med store omsorgsoppgaver" på helse.norge.no:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Her er <a href="./examples/index-dummy">HTML-visning</a> av en demo-instans av klassen "Block (<code>cdvno:Block</code>)" og dens distribusjon, med en del dummydata.</p>
+</li>
+<li>
+<p>Her er <a href="./examples/example-dummy.ttl">RDF Turtle-representasjon</a> av ovennevnte demo-instansen av klassen "Block (<code>cdvno:Block</code>)" og dens distribusjon.</p>
 </li>
 </ul>
 </div>
@@ -5366,7 +5383,7 @@ Det som utformes/utprøves i denne sandkassa er: Forslag til "Spesifikasjon for 
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-09-27 08:54:06 UTC
+Sist oppdatert 2023-09-29 08:17:39 UTC
 </div>
 </div>
 </body>

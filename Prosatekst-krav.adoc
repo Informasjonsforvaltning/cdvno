@@ -158,7 +158,7 @@ Språkkode i samsvar med ISO 639.
 | https://browser.ihtsdotools.org/?perspective=full&conceptId1=105386004&edition=MAIN/SNOMEDCT-NO&release=&languages=no,en[Avlastningsopphold &#x29C9;, window="_blank", role="ext-link"] (fra SNOMED CT)
 |===
  
-=== Eksempel på en minimums beskrivelse av en blokk
+=== Eksempel på en minimumsbeskrivelse av en blokk [[Eksempel-minimumsbeskrivelse]]
 
 Følgende illustrativt eksempel viser en minimums beskrivelse av en blokk, dvs. med kun obligatoriske metadata: 
 
