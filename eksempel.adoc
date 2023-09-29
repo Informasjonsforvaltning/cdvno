@@ -2,8 +2,8 @@
 
 Ref. eksemplet med minimumsbeskrivelse illustrert i <<Eksempel-minimumsbeskrivelse>>:
 
-* Her er link:/./examples/index-minimum[HTML-visning] av minimumsbeskrivelsen, utformet i henhold til denne delen av spesifikasjonen.
-* Her er link:/./examples/example-minimum.ttl[RDF Turtle-representasjon] av ovennevnte beskrivelsen, utformet i henhold til denne delen av spesifikasjonen. 
+* Her er link:./examples/index-minimum[HTML-visning] av minimumsbeskrivelsen, utformet i henhold til denne delen av spesifikasjonen.
+* Her er link:./examples/example-minimum.ttl[RDF Turtle-representasjon] av ovennevnte beskrivelsen, utformet i henhold til denne delen av spesifikasjonen. 
 
 === Et illustrativt eksempel med flere metadatafelter utfylt og med en del dummydata [[Eksempel-dummy]]
 
