@@ -11,7 +11,7 @@
 
 <https://informasjonsforvaltning.github.io/cdvno/test#block1>
    rdf:type cdvno:Block;
-   dct:modified "2023-0510"^^xsd:date;
+   dct:modified "2023-09-29"^^xsd:date;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:identifier "https://informasjonsforvaltning.github.io/cdvno/test#block1"^^xsd:anyURI;
    dcat:theme <https://psi.norge.no/los/tema/avlastning-og-stotte>;
@@ -37,10 +37,10 @@
    dct:description """testdistribusjon"""@nb,
        """test distribution"""@en;
    dct:format <http://publications.europa.eu/resource/authority/file-type/HTML>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC0>;
+   dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>;
    adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED>;
    dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE>;
    dcat:accessService <https://w3id.org/demo-resources/dummy-datasets#dmyDataSrvc1>;
    .
  
-#### End of the file, 2023-09-21 16:29:12
+#### End of the file, 2023-09-29 10:02:41
